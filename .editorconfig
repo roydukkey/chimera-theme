@@ -1,0 +1,16 @@
+# editorconfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Default settings:
+# Unix-style newlines
+# Use tab as indentation
+# A newline ending every file
+# Trim trailing whitespace from line endings
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = tab
+insert_final_newline = true
+trim_trailing_whitespace = true
