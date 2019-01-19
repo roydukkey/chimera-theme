@@ -25,4 +25,4 @@ $ npm run build
 
 ### Activate Chimera
 
-First run Visual Studio Code. Then the one of the two flavours of the Chimera Theme from the `File → Preferences → Color Theme` dropdown menu.
+First run Visual Studio Code. Then select one of the two flavours of the Chimera Theme from the `File → Preferences → Color Theme` dropdown menu.
