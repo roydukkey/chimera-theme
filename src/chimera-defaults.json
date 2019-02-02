@@ -38,6 +38,7 @@
 		"editorOverviewRuler.modifiedForeground": "%%Modified%%99",
 		"editorOverviewRuler.deletedForeground": "%%Deleted%%99",
 		"editorSuggestWidget.border": "%%BackgroundLight1%%",
+		"editorWhitespace.foreground": "%%BackgroundLight4%%",
 		"editorWidget.background": "%%BackgroundLight1%%",
 		"editorWarning.foreground": "%%Green%%",
 		"focusBorder": "%%PinkDark1%%",
