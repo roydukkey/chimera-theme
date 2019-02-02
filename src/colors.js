@@ -23,6 +23,7 @@ colors.BackgroundLight1 = colors.Background.lighten(0.225);
 colors.BackgroundLight2 = colors.Background.lighten(0.485);
 colors.BackgroundLight3 = colors.Background.lighten(0.825);
 colors.BackgroundLight4 = colors.Background.lighten(0.975);
+colors.BackgroundLight5 = colors.Background.lighten(1.75);
 
 colors.ForegroundDark1 = colors.Foreground.darken(0.35);
 colors.ForegroundDark2 = colors.Foreground.darken(0.5);
