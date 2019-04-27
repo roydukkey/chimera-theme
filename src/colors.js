@@ -28,9 +28,11 @@ colors.ForegroundDark1 = colors.Foreground.darken(0.35);
 colors.ForegroundDark2 = colors.Foreground.darken(0.5);
 colors.ForegroundPurpleMix = colors.Foreground.mix(colors.Purple);
 
+colors.OrangeDark1 = colors.Orange.darken(0.50).desaturate(0.65);
+
 colors.PinkDark1 = colors.Pink.darken(0.30).desaturate(0.50);
 colors.PinkDark2 = colors.Pink.darken(0.35).desaturate(0.60);
-colors.PinkDark3 = colors.Pink.darken(0.45).desaturate(0.75);
+colors.PinkDark3 = colors.Pink.darken(0.50).desaturate(0.70);
 
 colors.PurpleDark1 = colors.Purple.darken(0.25).desaturate(0.55);
 colors.PurpleDark2 = colors.Purple.darken(0.50).desaturate(0.75);
