@@ -1,7 +1,8 @@
 'use strict';
 
-const Color = require('color')
-	, fs = require('fs')
+require('color');
+
+const fs = require('fs')
 	, mkdirp = require('mkdirp')
 	, path = require('path').posix;
 
@@ -22,9 +23,7 @@ mkdirp(distPath, (err) => {
 		fs.readFile(path.join(srcPath, template), 'utf8', (err, json) => {
 			if (err) throw err;
 
-			json = json.replace(/%%([A-z0-9]*?)%%/g, (match, color) => {
-				return colors[color].hex().toString();;
-			});
+			json = json.replace(/%%([A-z0-9]*?)%%/g, (match, color) => colors[color].hex().toString());
 
 			const dist = path.join(distPath, template);
 
