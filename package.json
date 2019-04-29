@@ -35,6 +35,7 @@
 	"license": "MIT",
 	"categories": [ "Themes" ],
 	"homepage": "https://github.com/roydukkey/chimera-theme/blob/master/README.md",
+	"icon": "icon.png",
 
 	"galleryBanner": {
 		"color": "#3c4557",
@@ -49,7 +50,7 @@
 				"path": "./dist/chimera.json"
 			},
 			{
-				"label": "Chimere+",
+				"label": "Chimera+",
 				"uiTheme": "vs-dark",
 				"path": "./dist/chimera-plus.json"
 			}
