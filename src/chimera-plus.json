@@ -221,6 +221,50 @@
 			"settings": {
 				"foreground": "%%Green%%"
 			}
+		},
+		{
+			"name": "C# Preprocessors All",
+			"scope": [
+				"meta.preprocessor.cs",
+				"meta.preprocessor.cs string"
+			],
+			"settings": {
+				"foreground": "%%Yellow%%7F"
+			}
+		},
+		{
+			"name": "C# Preprocessors Directives",
+			"scope": [
+				"meta.preprocessor.cs keyword",
+				"meta.preprocessor.cs punctuation.separator.hash"
+			],
+			"settings": {
+				"foreground": "%%Purple%%7F"
+			}
+		},
+		{
+			"name": "C# Preprocessors Operator & Parenthesis",
+			"scope": [
+				"meta.preprocessor.cs keyword.operator",
+				"meta.preprocessor.cs punctuation.parenthesis",
+			],
+			"settings": {
+				"foreground": "%%Foreground%%7F"
+			}
+		},
+		{
+			"name": "C# Preprocessors Symbols",
+			"scope": "meta.preprocessor.cs entity.name.variable.preprocessor.symbol.cs",
+			"settings": {
+				"foreground": "%%Cyan%%7F"
+			}
+		},
+		{
+			"name": "C# Preprocessors Numeric",
+			"scope": "meta.preprocessor.cs constant.numeric",
+			"settings": {
+				"foreground": "%%GreenYellowMix%%7F"
+			}
 		}
 	]
 }
