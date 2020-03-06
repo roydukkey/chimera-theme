@@ -298,7 +298,10 @@
 			}
 		},
 		{
-			"scope": "keyword.other.unit",
+			"scope": [
+				"keyword.other.unit",
+				"keyword.control.unit"
+			],
 			"settings": {
 				"foreground": "%%GreenYellowMix%%"
 			}
