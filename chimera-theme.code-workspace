@@ -7,8 +7,6 @@
 	"settings": {
 		"files.exclude": {
 			"**/node_modules": true,
-			"*ignore": true,
-			".editorconfig": true,
 			"*-lock.json": true,
 			"*.code-workspace": true
 		}
