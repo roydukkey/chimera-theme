@@ -265,6 +265,23 @@
 			"settings": {
 				"foreground": "%%GreenYellowMix%%7F"
 			}
+		},
+		{
+			"name": "PHP Inheritance Separator",
+			"scope": "punctuation.separator.inheritance.php",
+			"settings": {
+				"foreground": "%%Foreground%%"
+			}
+		},
+		{
+			"name": "PHP Using Namespace and Alias",
+			"scope": [
+				"entity.other.alias.php",
+				"support.other.namespace.php"
+			],
+			"settings": {
+				"foreground": "%%Green%%"
+			}
 		}
 	]
 }
