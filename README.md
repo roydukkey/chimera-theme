@@ -1,4 +1,8 @@
 # Chimera
+
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/roydukkey.theme-chimera?color=blue&label=Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=roydukkey.theme-chimera)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 > A dark theme for Visual Studio Code inspired by the [Dracula](https://draculatheme.com), [Dark](https://github.com/Microsoft/vscode/tree/master/extensions/theme-defaults/themes), and [Dark+](https://github.com/Microsoft/vscode/tree/master/extensions/theme-defaults/themes) themes.
 
 ![Screenshot](https://roydukkey.github.io/assets/images/chimera-theme-screenshot.png)
