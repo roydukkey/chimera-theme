@@ -1,4 +1,5 @@
 ﻿# User-specific files
+.DS_Store
 *.vs
 *.user
 
