@@ -2,23 +2,26 @@
 	"name": "theme-chimera",
 	"version": "0.3.0",
 	"description": "A dark theme for Visual Studio Code inspired by the Dracula, Dark, and Dark+ themes",
-	"keywords": ["chimera", "color-theme", "dark", "dracula", "theme"],
+	"keywords": [
+		"chimera",
+		"color-theme",
+		"dark",
+		"dracula",
+		"theme"
+	],
 	"author": {
 		"name": "roydukkey",
 		"email": "contact@changelog.me",
 		"url": "http://changelog.me"
 	},
-
 	"dependencies": {
 		"color": "^3.1.0",
 		"mkdirp": "^0.5.1"
 	},
-
 	"scripts": {
 		"postinstall": "npm run build",
 		"build": "node ./scripts/build.js"
 	},
-
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/roydukkey/chimera-theme.git"
@@ -26,22 +29,21 @@
 	"bugs": {
 		"url": "https://github.com/roydukkey/chimera-theme/issues"
 	},
-
 	"engines": {
 		"vscode": "^1.13.0"
 	},
 	"publisher": "roydukkey",
 	"displayName": "Chimera Theme",
 	"license": "MIT",
-	"categories": [ "Themes" ],
+	"categories": [
+		"Themes"
+	],
 	"homepage": "https://github.com/roydukkey/chimera-theme/blob/master/README.md",
 	"icon": "icon.png",
-
 	"galleryBanner": {
 		"color": "#3c4557",
 		"theme": "dark"
 	},
-
 	"contributes": {
 		"themes": [
 			{
