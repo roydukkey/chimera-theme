@@ -95,6 +95,15 @@
 			}
 		},
 		{
+			"name": "Object key-value separator, TS grammar specific",
+			"scope": [
+				"meta.object-literal.key punctuation.separator.key-value"
+			],
+			"settings": {
+				"foreground": "%%Foreground%%"
+			}
+		},
+		{
 			"name": "CSS property value",
 			"scope": [
 				"support.constant.property-value",
