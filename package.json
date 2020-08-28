@@ -41,7 +41,7 @@
 	"homepage": "https://github.com/roydukkey/chimera-theme/blob/master/README.md",
 	"icon": "icon.png",
 	"galleryBanner": {
-		"color": "#3c4557",
+		"color": "#1e1f29",
 		"theme": "dark"
 	},
 	"contributes": {
