@@ -15,7 +15,8 @@
 		"url": "http://changelog.me"
 	},
 	"devDependencies": {
-		"color": "^3.1.0"
+		"color": "^3.1.0",
+		"eslint": "^7.8.0"
 	},
 	"scripts": {
 		"postinstall": "npm run build",
@@ -56,5 +57,84 @@
 				"path": "./dist/chimera-plus.json"
 			}
 		]
+	},
+	"eslintConfig": {
+		"env": {
+			"node": true,
+			"es6": true
+		},
+		"parserOptions": {
+			"ecmaVersion": 2018
+		},
+		"rules": {
+			"arrow-parens": [
+				"error",
+				"always"
+			],
+			"arrow-spacing": [
+				"error",
+				{
+					"before": true,
+					"after": true
+				}
+			],
+			"brace-style": [
+				"error",
+				"stroustrup",
+				{
+					"allowSingleLine": false
+				}
+			],
+			"comma-spacing": [
+				"error",
+				{
+					"before": false,
+					"after": true
+				}
+			],
+			"curly": [
+				"error"
+			],
+			"comma-dangle": [
+				"error",
+				"never"
+			],
+			"key-spacing": [
+				"error"
+			],
+			"object-curly-spacing": [
+				"error",
+				"always"
+			],
+			"quotes": [
+				"error",
+				"single"
+			],
+			"semi": [
+				"error"
+			],
+			"sort-imports": [
+				"error",
+				{
+					"ignoreCase": false,
+					"ignoreDeclarationSort": false,
+					"ignoreMemberSort": false,
+					"memberSyntaxSortOrder": [
+						"single",
+						"multiple",
+						"all",
+						"none"
+					]
+				}
+			],
+			"space-before-blocks": [
+				"error",
+				"always"
+			],
+			"space-before-function-paren": [
+				"error",
+				"always"
+			]
+		}
 	}
 }

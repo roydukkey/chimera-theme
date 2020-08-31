@@ -1,11 +1,12 @@
 'use strict';
 
-const fs = require('fs')
-	, path = require('path');
+const colors = require('../src/colors');
+const fs = require('fs');
+const path = require('path');
 
-const srcPath = path.join(__dirname, '..', 'src')
-	, distPath = path.join(__dirname, '..', 'dist')
-	, colors = require('../src/colors');
+
+const src = path.join(__dirname, '..', 'src');
+const dist = path.join(__dirname, '..', 'dist');
 
 const templates = [
 	'chimera-defaults.json',
@@ -13,22 +14,28 @@ const templates = [
 	'chimera-plus.json'
 ];
 
-if (!fs.existsSync(distPath)) {
-	fs.mkdirSync(distPath);
+
+if (!fs.existsSync(dist)) {
+	fs.mkdirSync(dist);
 }
 
-templates.forEach(template => {
-	fs.readFile(path.join(srcPath, template), 'utf8', (err, json) => {
-		if (err) throw err;
+
+templates.forEach((template) => {
+	fs.readFile(path.join(src, template), 'utf8', (err, json) => {
+		if (err) {
+			throw err;
+		}
 
 		json = json.replace(/%%([A-z0-9]*?)%%/g, (match, color) => colors[color].hex().toString());
 
-		const dist = path.join(distPath, template);
+		const file = path.join(dist, template);
 
-		fs.writeFile(dist, json, 'utf8', (err) => {
-			if (err) throw err;
+		fs.writeFile(file, json, 'utf8', (err) => {
+			if (err) {
+				throw err;
+			}
 
-			console.log(`[Generated] ${dist}`);
+			console.log(`[Generated] ${file}`);
 		});
 	});
 });

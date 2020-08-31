@@ -2,21 +2,23 @@
 
 const Color = require('color');
 
+
 // Main Colors
 let colors = {
-	Background:		Color('#1E1F29'),
-	CurrentLine:	Color('#44475A'),
-	Selection:		Color('#6E799B'),
-	Foreground:		Color('#DEE0E3'),
-	Comment:			Color('#6272A4'),
-	Cyan:					Color('#B6F6FD'),
-	Green:				Color('#9AE7A9'),
-	Orange:				Color('#FFCA92'),
-	Pink:					Color('#F3AFE6'),
-	Purple:				Color('#CAA9FA'),
-	Red:					Color('#F09489'),
-	Yellow: 			Color('#F6FACA')
+	Background: Color('#1E1F29'),
+	CurrentLine: Color('#44475A'),
+	Selection: Color('#6E799B'),
+	Foreground: Color('#DEE0E3'),
+	Comment: Color('#6272A4'),
+	Cyan: Color('#B6F6FD'),
+	Green: Color('#9AE7A9'),
+	Orange: Color('#FFCA92'),
+	Pink: Color('#F3AFE6'),
+	Purple: Color('#CAA9FA'),
+	Red: Color('#F09489'),
+	Yellow: Color('#F6FACA')
 };
+
 
 // Color Variants
 colors.BackgroundLight1 = colors.Background.lighten(0.225);
@@ -43,6 +45,7 @@ colors.GreenYellowMix = colors.Green.mix(colors.Yellow);
 
 colors.RedDark1 = colors.Red.darken(0.35).desaturate(0.65);
 
+
 // Semantic
 colors.Added = colors.Green;
 colors.Conflict = colors.Yellow;
@@ -58,5 +61,6 @@ colors.Info = colors.Cyan;
 colors.Warning = colors.Yellow;
 colors.WarningDark1 = colors.Yellow.darken(0.45).desaturate(0.75);
 colors.WarningDark2 = colors.Yellow.darken(0.70).desaturate(0.85);
+
 
 module.exports = colors;
