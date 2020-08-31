@@ -1,13 +1,11 @@
 'use strict';
 
-require('color');
-
 const fs = require('fs')
 	, path = require('path');
 
 const srcPath = path.join(__dirname, '..', 'src')
 	, distPath = path.join(__dirname, '..', 'dist')
-	, colors = require(path.join(srcPath, 'colors'));
+	, colors = require('../src/colors');
 
 const templates = [
 	'chimera-defaults.json',
