@@ -15,8 +15,7 @@
 		"url": "http://changelog.me"
 	},
 	"devDependencies": {
-		"color": "^3.1.0",
-		"mkdirp": "^0.5.1"
+		"color": "^3.1.0"
 	},
 	"scripts": {
 		"postinstall": "npm run build",

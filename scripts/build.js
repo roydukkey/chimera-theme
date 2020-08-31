@@ -3,8 +3,7 @@
 require('color');
 
 const fs = require('fs')
-	, mkdirp = require('mkdirp')
-	, path = require('path').posix;
+	, path = require('path');
 
 const srcPath = path.join(__dirname, '..', 'src')
 	, distPath = path.join(__dirname, '..', 'dist')
@@ -16,22 +15,22 @@ const templates = [
 	'chimera-plus.json'
 ];
 
-mkdirp(distPath, (err) => {
-	if (err) throw err;
+if (!fs.existsSync(distPath)) {
+	fs.mkdirSync(distPath);
+}
 
-	templates.forEach(template => {
-		fs.readFile(path.join(srcPath, template), 'utf8', (err, json) => {
+templates.forEach(template => {
+	fs.readFile(path.join(srcPath, template), 'utf8', (err, json) => {
+		if (err) throw err;
+
+		json = json.replace(/%%([A-z0-9]*?)%%/g, (match, color) => colors[color].hex().toString());
+
+		const dist = path.join(distPath, template);
+
+		fs.writeFile(dist, json, 'utf8', (err) => {
 			if (err) throw err;
 
-			json = json.replace(/%%([A-z0-9]*?)%%/g, (match, color) => colors[color].hex().toString());
-
-			const dist = path.join(distPath, template);
-
-			fs.writeFile(dist, json, 'utf8', (err) => {
-				if (err) throw err;
-
-				console.log(`[Generated] ${dist}`);
-			});
+			console.log(`[Generated] ${dist}`);
 		});
 	});
 });
