@@ -14,7 +14,7 @@
 		"email": "contact@changelog.me",
 		"url": "http://changelog.me"
 	},
-	"dependencies": {
+	"devDependencies": {
 		"color": "^3.1.0",
 		"mkdirp": "^0.5.1"
 	},
