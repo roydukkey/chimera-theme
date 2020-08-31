@@ -21,21 +21,18 @@ if (!fs.existsSync(dist)) {
 
 
 templates.forEach((template) => {
-	fs.readFile(path.join(src, template), 'utf8', (err, json) => {
-		if (err) {
-			throw err;
-		}
 
-		json = json.replace(/%%([A-z0-9]*?)%%/g, (match, color) => colors[color].hex().toString());
+	const json = fs.readFileSync(path.join(src, template), 'utf8')
+		.replace(/%%([A-z0-9]*?)%%/g, (match, color) => colors[color].hex().toString());
 
-		const file = path.join(dist, template);
+	const file = path.join(dist, template);
 
-		fs.writeFile(file, json, 'utf8', (err) => {
-			if (err) {
-				throw err;
-			}
+	fs.writeFileSync(file, json, 'utf-8');
 
-			console.log(`[Generated] ${file}`);
-		});
-	});
+	console.log(`[Generated] ${file}`);
+
 });
+
+
+// Blank line
+console.log();
