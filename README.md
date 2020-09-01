@@ -24,7 +24,6 @@ If you are a git user, you can install the theme and keep up to date by cloning 
 $ git clone https://github.com/roydukkey/chimera-theme.git ~/.vscode/extensions/theme-chimera
 $ cd ~/.vscode/extensions/theme-chimera
 $ npm install
-$ npm run build
 ```
 
 ### Activate Chimera
