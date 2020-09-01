@@ -1,27 +1,15 @@
 {
 	"name": "theme-chimera",
-	"version": "0.3.0",
 	"description": "A dark theme for Visual Studio Code inspired by the Dracula, Dark, and Dark+ themes",
-	"keywords": [
-		"chimera",
-		"color-theme",
-		"dark",
-		"dracula",
-		"theme"
-	],
+	"version": "0.3.0",
 	"author": {
 		"name": "roydukkey",
 		"email": "contact@changelog.me",
 		"url": "http://changelog.me"
 	},
-	"devDependencies": {
-		"color": "^3.1.0",
-		"eslint": "^7.8.0"
-	},
-	"scripts": {
-		"postinstall": "npm run build",
-		"build": "node ./scripts/build.js"
-	},
+	"publisher": "roydukkey",
+	"license": "MIT",
+	"homepage": "https://github.com/roydukkey/chimera-theme/blob/master/README.md",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/roydukkey/chimera-theme.git"
@@ -29,21 +17,22 @@
 	"bugs": {
 		"url": "https://github.com/roydukkey/chimera-theme/issues"
 	},
-	"engines": {
-		"vscode": "^1.13.0"
-	},
-	"publisher": "roydukkey",
+	"keywords": [
+		"chimera",
+		"color-theme",
+		"dark",
+		"dracula",
+		"theme"
+	],
 	"displayName": "Chimera Theme",
-	"license": "MIT",
 	"categories": [
 		"Themes"
 	],
-	"homepage": "https://github.com/roydukkey/chimera-theme/blob/master/README.md",
-	"icon": "icon.png",
 	"galleryBanner": {
 		"color": "#1e1f29",
 		"theme": "dark"
 	},
+	"icon": "icon.png",
 	"contributes": {
 		"themes": [
 			{
@@ -57,6 +46,17 @@
 				"path": "./dist/chimera-plus.json"
 			}
 		]
+	},
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"devDependencies": {
+		"color": "^3.1.0",
+		"eslint": "^7.8.0"
+	},
+	"scripts": {
+		"postinstall": "npm run build",
+		"build": "node ./scripts/build.js"
 	},
 	"eslintConfig": {
 		"env": {
