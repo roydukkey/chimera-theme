@@ -36,14 +36,14 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Chimera",
-				"uiTheme": "vs-dark",
-				"path": "./dist/chimera.json"
-			},
-			{
 				"label": "Chimera+",
 				"uiTheme": "vs-dark",
 				"path": "./dist/chimera-plus.json"
+			},
+			{
+				"label": "Chimera",
+				"uiTheme": "vs-dark",
+				"path": "./dist/chimera.json"
 			}
 		]
 	},
