@@ -2,6 +2,12 @@
 	"$schema": "vscode://schemas/color-theme",
 	"name": "Chimera",
 	"include": "./chimera-defaults.json",
+	"semanticTokenColors": {
+		"newOperator": "%%Foreground%%",
+		"stringLiteral": "%%Yellow%%",
+		"customLiteral": "%%Foreground%%",
+		"numberLiteral": "%%GreenYellowMix%%",
+	},
 	"tokenColors": [
 		{
 			"scope": [
@@ -45,7 +51,6 @@
 		{
 			"scope": [
 				"constant.numeric",
-				"entity.name.operator.custom-literal.number",
 				"variable.other.enummember",
 				"keyword.operator.plus.exponent",
 				"keyword.operator.minus.exponent"
@@ -222,7 +227,6 @@
 		{
 			"scope": [
 				"string",
-				"entity.name.operator.custom-literal.string",
 				"meta.embedded.assembly"
 			],
 			"settings": {

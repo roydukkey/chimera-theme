@@ -2,6 +2,12 @@
 	"$schema": "vscode://schemas/color-theme",
 	"name": "Chimera+",
 	"include": "./chimera.json",
+	"semanticTokenColors": {
+		"newOperator": "%%Purple%%",
+		"stringLiteral": "%%Yellow%%",
+		"customLiteral": "%%Orange%%",
+		"numberLiteral": "%%GreenYellowMix%%"
+	},
 	"tokenColors": [
 		{
 			"name": "Function declarations",
