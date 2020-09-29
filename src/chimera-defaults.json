@@ -1,6 +1,7 @@
 {
 	"$schema": "vscode://schemas/color-theme",
 	"name": "Chimera Default Colors",
+	"semanticHighlighting": true,
 	"colors": {
 		"editorCodeLens.foreground": "%%Comment%%55",
 		"activityBar.background": "%%BackgroundLight2%%",
