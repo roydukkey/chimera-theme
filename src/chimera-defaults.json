@@ -95,6 +95,7 @@
 		"textLink.activeForeground": "%%Pink%%",
 		"textLink.foreground": "%%Pink%%",
 		"titleBar.activeBackground": "%%BackgroundLight4%%",
-		"titleBar.inactiveBackground": "%%BackgroundLight1%%"
+		"titleBar.inactiveBackground": "%%BackgroundLight1%%",
+		"tree.indentGuidesStroke": "%%Foreground%%66"
 	}
 }
