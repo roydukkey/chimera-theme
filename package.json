@@ -51,7 +51,7 @@
 		"vscode": "^1.13.0"
 	},
 	"devDependencies": {
-		"color": "^3.1.0",
+		"color": "^3.1.2",
 		"eslint": "^7.8.0"
 	},
 	"scripts": {
