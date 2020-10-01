@@ -1,35 +1,31 @@
-import colors from '../src/colors';
-import * as fs from 'fs';
-import * as path from 'path';
+import Chimera from '../src/Themes/Chimera';
+import ChimeraDefaults from '../src/themes/ChimeraDefaults';
+import ChimeraPlus from '../src/themes/ChimeraPlus';
+import { join } from 'path';
+import { existsSync, mkdirSync, writeFileSync } from 'fs';
 
 
-const src = path.join(__dirname, '..', 'src');
-const dist = path.join(__dirname, '..', 'dist');
+const dist = join(__dirname, '..', 'dist');
 
-const templates = [
-	'chimera-defaults.json',
-	'chimera.json',
-	'chimera-plus.json'
-];
+const templates = {
+	'chimera-defaults.json': ChimeraDefaults,
+	'chimera.json': Chimera,
+	'chimera-plus.json': ChimeraPlus
+};
 
 
-if (!fs.existsSync(dist)) {
-	fs.mkdirSync(dist);
+if (!existsSync(dist)) {
+	mkdirSync(dist);
 }
 
 
-templates.forEach((template) => {
+for (const [fileName, document] of Object.entries(templates)) {
+	const file = join(dist, fileName);
 
-	const json = fs.readFileSync(path.join(src, template), 'utf8')
-		.replace(/%%([A-z0-9]*?)%%/g, (match, color) => colors[color].hex().toString());
-
-	const file = path.join(dist, template);
-
-	fs.writeFileSync(file, json, 'utf-8');
+	writeFileSync(file, JSON.stringify(new document(), null, '\t'));
 
 	console.log(`[Generated] ${file}`);
-
-});
+}
 
 
 // Blank line
