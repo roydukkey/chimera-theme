@@ -10,6 +10,9 @@ export default abstract class Schema {
 	/** Colors in the workbench */
 	protected colors?: Record<string, string | color>;
 
+	/** Colors for semantic tokens */
+	protected semanticTokenColors?: Record<string, string | color>;
+
 	/** Colors for syntax highlighting */
 	protected tokenColors?: Scope[];
 
