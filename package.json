@@ -72,11 +72,11 @@
 	"scripts": {
 		"clean": "node -e \"fs.rmdirSync('./dist', { recursive: true }); const pack = './$npm_package_name-$npm_package_version.vsix'; fs.existsSync(pack) && fs.unlinkSync(pack)\"",
 		"lint": "npm run lint:es && npm run lint:spelling",
-		"lint:es": "eslint --ext .ts ./src ./scripts",
+		"lint:es": "eslint --ext .ts ./src ./build",
 		"lint:spelling": "cspell --config './.vscode/cSpell.json' '**/{.*/**/,.*/**/.,,.}*'",
 		"build": "npm run clean && npm run build:theme && npm run build:extension",
 		"build:extension": "tsc ./src/extension.ts @./tsconfig.args",
-		"build:theme": "ts-node ./scripts/build.ts",
+		"build:theme": "ts-node ./build/theme.ts",
 		"postinstall": "npm run build",
 		"vscode:prepublish": "npm run lint && npm run build"
 	},

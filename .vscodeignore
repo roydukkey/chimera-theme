@@ -1,6 +1,6 @@
 .vscode/**
 .vscode-test/**
-scripts/**
+build/**
 src/**
 .gitignore
 tsconfig.args
