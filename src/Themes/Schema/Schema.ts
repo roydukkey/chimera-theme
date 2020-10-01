@@ -7,13 +7,16 @@ export default abstract class Schema {
 	readonly name;
 	protected include?: string;
 
-	/** Colors in the workbench */
+	/** Whether semantic highlighting should be enabled for this theme. */
+	protected semanticHighlighting?: Boolean;
+
+	/** Colors in the workbench. */
 	protected colors?: Record<string, string | color>;
 
-	/** Colors for semantic tokens */
+	/** Colors for semantic tokens. */
 	protected semanticTokenColors?: Record<string, string | color>;
 
-	/** Colors for syntax highlighting */
+	/** Colors for syntax highlighting. */
 	protected tokenColors?: Scope[];
 
 	/**
