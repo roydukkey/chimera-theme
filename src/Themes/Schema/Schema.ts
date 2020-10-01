@@ -8,7 +8,7 @@ export default abstract class Schema {
 	protected include?: string;
 
 	/** Whether semantic highlighting should be enabled for this theme. */
-	protected semanticHighlighting?: Boolean;
+	protected semanticHighlighting?: boolean;
 
 	/** Colors in the workbench. */
 	protected colors?: Record<string, string | color>;
