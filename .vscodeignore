@@ -3,4 +3,5 @@
 scripts/**
 src/**
 .gitignore
+tsconfig.args
 tsconfig.json
