@@ -16,8 +16,6 @@ export default class ChimeraDefaults extends Schema {
 			// Alpha values are converted from 8-bit hex values:
 			// https://8-digit-hex-converter.website/
 
-			'editorCodeLens.foreground': Color.Comment.alpha(0.333),
-
 			'activityBar.background': Color.BackgroundLight2,
 			'activityBar.foreground': Color.Foreground,
 			'activityBar.inactiveForeground': Color.ForegroundPurpleMix.alpha(0.333),
@@ -43,9 +41,12 @@ export default class ChimeraDefaults extends Schema {
 			'editor.lineHighlightBorder': Color.BackgroundLight1,
 			'editor.stackFrameHighlightBackground': Color.WarningDark2,
 
+			'editorCodeLens.foreground': Color.Comment.alpha(0.333),
+
 			'editorError.foreground': Color.Error,
 
 			'editorGroup.border': Color.BackgroundLight1,
+			'editorGroup.dropBackground': Color.BackgroundLight4.alpha(0.6),
 			'editorGroupHeader.tabsBackground': Color.BackgroundLight1,
 
 			'editorGutter.addedBackground': Color.Added.alpha(0.6),
@@ -55,28 +56,26 @@ export default class ChimeraDefaults extends Schema {
 
 			'editorHoverWidget.border': Color.BackgroundLight3,
 
-			'editorIndentGuide.background': Color.BackgroundLight2,
 			'editorIndentGuide.activeBackground': Color.BackgroundLight4,
+			'editorIndentGuide.background': Color.BackgroundLight2,
 
-			'editorLineNumber.foreground': Color.Comment,
 			'editorLineNumber.activeForeground': Color.Foreground,
+			'editorLineNumber.foreground': Color.Comment,
 
-			'editorGroup.dropBackground': Color.BackgroundLight4.alpha(0.6),
-
-			'editorOverviewRuler.errorForeground': Color.Error.alpha(0.6),
-			'editorOverviewRuler.warningForeground': Color.Warning.alpha(0.6),
-			'editorOverviewRuler.infoForeground': Color.Info.alpha(0.6),
 			'editorOverviewRuler.addedForeground': Color.Added.alpha(0.6),
-			'editorOverviewRuler.modifiedForeground': Color.Modified.alpha(0.6),
 			'editorOverviewRuler.deletedForeground': Color.Deleted.alpha(0.6),
+			'editorOverviewRuler.errorForeground': Color.Error.alpha(0.6),
+			'editorOverviewRuler.infoForeground': Color.Info.alpha(0.6),
+			'editorOverviewRuler.modifiedForeground': Color.Modified.alpha(0.6),
+			'editorOverviewRuler.warningForeground': Color.Warning.alpha(0.6),
 
 			'editorSuggestWidget.border': Color.BackgroundLight1,
+
+			'editorWarning.foreground': Color.Green,
 
 			'editorWhitespace.foreground': Color.BackgroundLight4,
 
 			'editorWidget.background': Color.BackgroundLight1,
-
-			'editorWarning.foreground': Color.Green,
 
 			'focusBorder': Color.PinkDark1,
 
@@ -118,8 +117,8 @@ export default class ChimeraDefaults extends Schema {
 			'panelTitle.activeBorder': Color.PinkDark1,
 			'panelTitle.inactiveForeground': Color.Comment,
 
-			'pickerGroup.foreground': Color.Pink,
 			'pickerGroup.border': Color.BackgroundLight5,
+			'pickerGroup.foreground': Color.Pink,
 
 			'progressBar.background': Color.Purple,
 
