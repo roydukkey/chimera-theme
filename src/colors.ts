@@ -1,10 +1,8 @@
-'use strict';
-
-const Color = require('color');
+import * as Color from 'color';
 
 
 // Main Colors
-let colors = {
+const colors: Record<string, Color> = {
 	Background: Color('#1E1F29'),
 	CurrentLine: Color('#44475A'),
 	Selection: Color('#6E799B'),
@@ -64,4 +62,4 @@ colors.WarningDark1 = colors.Yellow.darken(0.45).desaturate(0.75);
 colors.WarningDark2 = colors.Yellow.darken(0.70).desaturate(0.85);
 
 
-module.exports = colors;
+export default colors;

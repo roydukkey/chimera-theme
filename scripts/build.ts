@@ -1,8 +1,6 @@
-'use strict';
-
-const colors = require('../src/colors');
-const fs = require('fs');
-const path = require('path');
+import colors from '../src/colors';
+import * as fs from 'fs';
+import * as path from 'path';
 
 
 const src = path.join(__dirname, '..', 'src');
