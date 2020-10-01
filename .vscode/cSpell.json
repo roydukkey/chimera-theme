@@ -1,0 +1,34 @@
+{
+	"ignorePaths": [
+		"dist",
+		"node_modules/**/{.*/**/,.*/**/.,,.}*",
+		"*-lock.json",
+		"*.vsix",
+		".DS_Store",
+		".git"
+	],
+	"words": [
+		"alignas",
+		"alignof",
+		"desaturate",
+		"editorconfig",
+		"enummember",
+		"gitlens",
+		"noexcept",
+		"paren",
+		"parens",
+		"preprocessors",
+		"roydukkey",
+		"scrollbar",
+		"stroustrup",
+		"submodule",
+		"tsdoc",
+		"uintptr",
+		"unsets",
+		"untracked",
+		"valpha",
+		"vendored",
+		"vsix",
+		"wordlike"
+	]
+}
