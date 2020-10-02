@@ -6,14 +6,14 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Extension",
+			"name": "Run Extension",
 			"type": "extensionHost",
 			"request": "launch",
-			"preLaunchTask": "build",
 			"runtimeExecutable": "${execPath}",
 			"args": [
 				"--extensionDevelopmentPath=${workspaceFolder}"
-			]
+			],
+			"preLaunchTask": "${defaultBuildTask}"
 		}
 	]
 }
