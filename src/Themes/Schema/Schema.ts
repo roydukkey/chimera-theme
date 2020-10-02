@@ -29,4 +29,3 @@ export default abstract class Schema {
 	}
 
 }
-
