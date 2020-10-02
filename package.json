@@ -50,7 +50,7 @@
 		"configuration": {
 			"title": "Chimera Theme",
 			"properties": {
-				"chimeraTheme.plus.contrastConstants": {
+				"theme-chimera.plus.contrastConstants": {
 					"type": "boolean",
 					"scope": "machine",
 					"default": false,
