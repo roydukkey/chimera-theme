@@ -46,7 +46,18 @@
 				"uiTheme": "vs-dark",
 				"path": "./dist/chimera.json"
 			}
-		]
+		],
+		"configuration": {
+			"title": "Chimera Theme",
+			"properties": {
+				"chimeraTheme.plus.contrastConstants": {
+					"type": "boolean",
+					"scope": "machine",
+					"default": false,
+					"description": "Contrast constants and enum members from variables and parameters."
+				}
+			}
+		}
 	},
 	"activationEvents": [
 		"*"
