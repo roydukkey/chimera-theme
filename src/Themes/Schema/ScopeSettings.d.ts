@@ -11,4 +11,3 @@ interface ScopeSettings {
 }
 
 export default ScopeSettings;
-

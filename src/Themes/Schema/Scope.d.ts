@@ -14,4 +14,3 @@ interface Scope {
 }
 
 export default Scope;
-
