@@ -78,6 +78,7 @@
 		"@types/vscode": "^1.49.0",
 		"@typescript-eslint/eslint-plugin": "^4.3.0",
 		"@typescript-eslint/parser": "^4.3.0",
+		"clean-package": "^1.0.1",
 		"cspell": "^4.1.0",
 		"dot-object": "^2.1.4",
 		"eslint": "^7.10.0",
@@ -96,7 +97,18 @@
 		"build:theme": "ts-node ./build/theme.ts",
 		"watch": "npm run build && gulp watch",
 		"postinstall": "npm run build",
-		"vscode:prepublish": "npm run lint && npm run build"
+		"vscode:prepublish": "npm run lint && npm run build && clean-package",
+		"vsce:package": "vsce package && clean-package restore",
+		"vsce:publish": "vsce publish && clean-package restore"
+	},
+	"clean-package": {
+		"indent": "\t",
+		"remove": [
+			"clean-package",
+			"devDependencies",
+			"eslintConfig",
+			"scripts"
+		]
 	},
 	"eslintConfig": {
 		"ignorePatterns": [

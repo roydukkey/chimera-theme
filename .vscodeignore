@@ -4,5 +4,6 @@ build/**
 src/**
 .gitignore
 gulpFile.ts
+package.json.backup
 tsconfig.args
 tsconfig.json

@@ -30,6 +30,7 @@
 		"untracked",
 		"valpha",
 		"vendored",
+		"vsce",
 		"vsix",
 		"wordlike"
 	]
