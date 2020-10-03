@@ -91,7 +91,7 @@
 		"lint": "npm run lint:es && npm run lint:spelling",
 		"lint:es": "eslint --ext .ts gulpFile.ts ./src ./build",
 		"lint:spelling": "cspell --config './.vscode/cSpell.json' '**/{.*/**/,.*/**/.,,.}*'",
-		"build": "npm run clean && npm run build:theme && npm run build:extension",
+		"build": "npm run clean && npm run build:extension",
 		"build:extension": "tsc ./src/extension.ts @./tsconfig.args",
 		"build:theme": "ts-node ./build/theme.ts",
 		"watch": "npm run build && gulp watch",
