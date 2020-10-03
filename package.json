@@ -65,6 +65,10 @@
 	"engines": {
 		"vscode": "^1.49.0"
 	},
+	"dependencies": {
+		"color": "^3.1.2",
+		"color-string": "^1.5.3"
+	},
 	"devDependencies": {
 		"@types/color": "^3.0.1",
 		"@types/color-string": "^1.5.0",
@@ -74,8 +78,6 @@
 		"@types/vscode": "^1.49.0",
 		"@typescript-eslint/eslint-plugin": "^4.3.0",
 		"@typescript-eslint/parser": "^4.3.0",
-		"color": "^3.1.2",
-		"color-string": "^1.5.3",
 		"cspell": "^4.1.0",
 		"dot-object": "^2.1.4",
 		"eslint": "^7.10.0",
