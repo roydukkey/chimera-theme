@@ -7,16 +7,14 @@
 
 ![Screenshot](https://roydukkey.github.io/assets/images/chimera-theme-screenshot.png)
 
-### Install Chimera
+## Install Chimera
 
-#### Using Command Palette
+### Using VS Code
 
-1. Go to `View → Command Palette` or press <kbd>Cmd ⌘</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
-2. Then enter 'Install Extension'
-3. Type 'Chimera Theme'
-4. Select it or press <kbd>Enter</kbd> to install
+1. Go to [vscode:extension/roydukkey.theme-chimera](vscode:extension/roydukkey.theme-chimera)
+2. Select it or press <kbd>Enter</kbd> to install
 
-#### Using Git
+### Using Git
 
 If you are a git user, you can install the theme and keep up to date by cloning the repo:
 
@@ -26,6 +24,16 @@ $ cd ~/.vscode/extensions/theme-chimera
 $ npm install
 ```
 
-### Activate Chimera
+## Activate Chimera
 
 First run Visual Studio Code. Then select one of the two flavours of the Chimera Theme from the `File → Preferences → Color Theme` dropdown menu.
+
+## Configuration
+
+Chimera exposes the follow settings to allow for finer tuning of the theme.
+
+### Contrast Constants
+
+Default: `false`
+
+When enabled, constants and enum members are contrasted from variables and parameters.
