@@ -1,3 +1,8 @@
 .vscode/**
 .vscode-test/**
+build/**
+src/**
 .gitignore
+gulpFile.ts
+tsconfig.args
+tsconfig.json

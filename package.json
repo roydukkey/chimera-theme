@@ -33,6 +33,7 @@
 		"theme": "dark"
 	},
 	"icon": "icon.png",
+	"main": "./dist/extension.js",
 	"contributes": {
 		"themes": [
 			{
@@ -45,27 +46,75 @@
 				"uiTheme": "vs-dark",
 				"path": "./dist/chimera.json"
 			}
-		]
+		],
+		"configuration": {
+			"title": "Chimera Theme",
+			"properties": {
+				"theme-chimera.plus.contrastConstants": {
+					"type": "boolean",
+					"scope": "machine",
+					"default": false,
+					"description": "Contrast constants and enum members from variables and parameters."
+				}
+			}
+		}
 	},
+	"activationEvents": [
+		"*"
+	],
 	"engines": {
-		"vscode": "^1.13.0"
+		"vscode": "^1.49.0"
+	},
+	"dependencies": {
+		"color": "^3.1.2",
+		"color-string": "^1.5.3"
 	},
 	"devDependencies": {
-		"color": "^3.1.0",
-		"eslint": "^7.8.0"
+		"@types/color": "^3.0.1",
+		"@types/color-string": "^1.5.0",
+		"@types/dot-object": "^2.1.2",
+		"@types/gulp": "^4.0.7",
+		"@types/node": "^14.11.2",
+		"@types/vscode": "^1.49.0",
+		"@typescript-eslint/eslint-plugin": "^4.3.0",
+		"@typescript-eslint/parser": "^4.3.0",
+		"cspell": "^4.1.0",
+		"dot-object": "^2.1.4",
+		"eslint": "^7.10.0",
+		"eslint-plugin-tsdoc": "^0.2.7",
+		"gulp": "^4.0.2",
+		"ts-node": "^9.0.0",
+		"typescript": "^4.0.3"
 	},
 	"scripts": {
+		"clean": "node -e \"fs.rmdirSync('./dist', { recursive: true }); const pack = './$npm_package_name-$npm_package_version.vsix'; fs.existsSync(pack) && fs.unlinkSync(pack)\"",
+		"lint": "npm run lint:es && npm run lint:spelling",
+		"lint:es": "eslint --ext .ts gulpFile.ts ./src ./build",
+		"lint:spelling": "cspell --config './.vscode/cSpell.json' '**/{.*/**/,.*/**/.,,.}*'",
+		"build": "npm run clean && npm run build:extension",
+		"build:extension": "tsc ./src/extension.ts @./tsconfig.args",
+		"build:theme": "ts-node ./build/theme.ts",
+		"watch": "npm run build && gulp watch",
 		"postinstall": "npm run build",
-		"build": "node ./scripts/build.js"
+		"vscode:prepublish": "npm run lint && npm run build"
 	},
 	"eslintConfig": {
-		"env": {
-			"node": true,
-			"es6": true
-		},
+		"ignorePatterns": [
+			"dist/*"
+		],
+		"parser": "@typescript-eslint/parser",
 		"parserOptions": {
-			"ecmaVersion": 2018
+			"ecmaVersion": 6,
+			"sourceType": "module"
 		},
+		"plugins": [
+			"@typescript-eslint",
+			"eslint-plugin-tsdoc"
+		],
+		"extends": [
+			"eslint:recommended",
+			"plugin:@typescript-eslint/recommended"
+		],
 		"rules": {
 			"arrow-parens": [
 				"error",
@@ -134,7 +183,8 @@
 			"space-before-function-paren": [
 				"error",
 				"always"
-			]
+			],
+			"tsdoc/syntax": "warn"
 		}
 	}
 }
