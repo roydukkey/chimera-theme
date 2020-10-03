@@ -1,4 +1,4 @@
-import ExtensionConfiguration from './Configuration/Extension';
+import Configuration from './Configuration';
 import compile from './compile';
 import { ExtensionContext, commands, window, workspace } from 'vscode';
 
@@ -11,9 +11,9 @@ import { ExtensionContext, commands, window, workspace } from 'vscode';
 export function activate (context: ExtensionContext): void {
 
 	// Theme should be built after installation.
-	if (ExtensionConfiguration.isFirstRun) {
+	if (Configuration.isFirstRun) {
 		buildTheme();
-		ExtensionConfiguration.isFirstRun = false;
+		Configuration.isFirstRun = false;
 		requestReload('Please reload Visual Studio Code to complete the installation of the Chimera Theme.');
 	}
 
