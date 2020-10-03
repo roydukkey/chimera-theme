@@ -30,6 +30,7 @@ export default class ChimeraDefaults extends Schema {
 
 			'debugToolBar.background': Color.BackgroundLight3,
 
+			'diffEditor.diagonalFill': Color.BackgroundLight3,
 			'diffEditor.insertedTextBackground': Color.GreenDark1.alpha(0.266),
 			'diffEditor.removedTextBackground': Color.RedDark1.alpha(0.266),
 
