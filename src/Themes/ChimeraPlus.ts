@@ -1,12 +1,15 @@
 import Color from '../Color';
 import Schema from './Schema';
+import { WorkspaceConfiguration } from '../Configuration';
 
 export default class ChimeraPlus extends Schema {
 
 	/**
 	 * Initializes a new instance of the ChimeraPlus class.
+	 *
+	 * @param config - The workspace configuration used to alter the theme.
 	 */
-	constructor () {
+	constructor (config: WorkspaceConfiguration) {
 		super('Chimera+');
 
 		this.include = './chimera.json';
@@ -109,7 +112,30 @@ export default class ChimeraPlus extends Schema {
 				settings: {
 					foreground: Color.Cyan
 				}
-			}, {
+			}
+
+		];
+
+		if (config.plus.contrastConstants) {
+			this.tokenColors.push(
+
+				{
+					name: 'Constants and enums',
+					scope: [
+						'variable.other.constant',
+						'variable.other.enummember'
+					],
+					settings: {
+						foreground: Color.CyanLight1
+					}
+				}
+
+			);
+		}
+
+		this.tokenColors.push(
+
+			{
 				name: 'Object keys, TS grammar specific',
 				scope: 'meta.object-literal.key',
 				settings: {
@@ -297,7 +323,7 @@ export default class ChimeraPlus extends Schema {
 				}
 			}
 
-		];
+		);
 	}
 
 }

@@ -27,6 +27,8 @@ export default class Color {
 	static readonly ForegroundDark2 = Color.Foreground.darken(0.5);
 	static readonly ForegroundPurpleMix = Color.Foreground.mix(Color.Purple);
 
+	static readonly CyanLight1 = Color.Cyan.darken(0.15).saturate(0.1);
+
 	static readonly GreenDark1 = Color.Green.darken(0.35).desaturate(0.65);
 	static readonly GreenYellowMix = Color.Green.mix(Color.Yellow);
 
