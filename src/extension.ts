@@ -1,5 +1,7 @@
+import ExtensionConfiguration from './Configuration/Extension';
 import compile from './compile';
-import { ExtensionContext, window, workspace } from 'vscode';
+import { ExtensionContext, commands, window, workspace } from 'vscode';
+
 
 /**
  * This method is called when the extension is activated. It initializes the core functionality of the extension.
@@ -8,11 +10,18 @@ import { ExtensionContext, window, workspace } from 'vscode';
  */
 export function activate (context: ExtensionContext): void {
 
+	// Theme should be built after installation.
+	if (ExtensionConfiguration.isFirstRun) {
+		buildTheme();
+		ExtensionConfiguration.isFirstRun = false;
+		requestReload('Please reload Visual Studio Code to complete the installation of the Chimera Theme.');
+	}
+
 	// When theme configuration changes, rebuild theme.
 	context.subscriptions.push(workspace.onDidChangeConfiguration((event) => {
 		if (event.affectsConfiguration('theme-chimera.plus.contrastConstants')) {
 			buildTheme();
-			window.showInformationMessage('A setting to the Chimera Theme has changed that requires a reload to take effect.');
+			requestReload('A setting to the Chimera Theme has changed that requires a reload to take effect.');
 		}
 	}));
 
@@ -24,4 +33,19 @@ export function activate (context: ExtensionContext): void {
  */
 function buildTheme (): void {
 	compile(__dirname, workspace.getConfiguration('theme-chimera'));
+}
+
+
+/**
+ * Request the window be reloaded.
+ */
+async function requestReload (message: string): Promise<boolean> {
+	const selection = await window.showInformationMessage(message, 'Reload', 'Ignore');
+	const doReload = selection === 'Reload';
+
+	if (doReload) {
+		commands.executeCommand('workbench.action.reloadWindow');
+	}
+
+	return doReload;
 }

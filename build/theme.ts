@@ -9,6 +9,7 @@ import { existsSync, mkdirSync } from 'fs';
 const dest = join(__dirname, '..', 'dist');
 
 
+// Ensure destination directory exists.
 if (!existsSync(dest)) {
 	mkdirSync(dest);
 }
