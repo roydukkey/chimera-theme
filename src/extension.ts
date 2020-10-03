@@ -1,3 +1,4 @@
+import compile from './compile';
 import { ExtensionContext, window, workspace } from 'vscode';
 
 /**
@@ -7,11 +8,20 @@ import { ExtensionContext, window, workspace } from 'vscode';
  */
 export function activate (context: ExtensionContext): void {
 
-	// When theme configuration changes...
+	// When theme configuration changes, rebuild theme.
 	context.subscriptions.push(workspace.onDidChangeConfiguration((event) => {
 		if (event.affectsConfiguration('theme-chimera.plus.contrastConstants')) {
-			window.showInformationMessage('Congratulations, the configuration for your extension has changed!');
+			buildTheme();
+			window.showInformationMessage('A setting to the Chimera Theme has changed that requires a reload to take effect.');
 		}
 	}));
 
+}
+
+
+/**
+ * Rebuilds the theme templates for the updated configuration.
+ */
+function buildTheme (): void {
+	compile(__dirname, workspace.getConfiguration('theme-chimera'));
 }

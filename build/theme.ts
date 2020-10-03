@@ -1,25 +1,18 @@
-import Chimera from '../src/Themes/Chimera';
-import ChimeraDefaults from '../src/themes/ChimeraDefaults';
-import ChimeraPlus from '../src/themes/ChimeraPlus';
+import compile from '../src/compile';
 import { contributes } from '../package.json';
 import { join } from 'path';
 import { str } from 'dot-object';
 import { PropertySchema, WorkspaceConfiguration } from '../src/Configuration';
-import { existsSync, mkdirSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync } from 'fs';
 
 
-const dist = join(__dirname, '..', 'dist');
-
-const templates = {
-	'chimera-defaults.json': ChimeraDefaults,
-	'chimera.json': Chimera,
-	'chimera-plus.json': ChimeraPlus
-};
+const dest = join(__dirname, '..', 'dist');
 
 
-if (!existsSync(dist)) {
-	mkdirSync(dist);
+if (!existsSync(dest)) {
+	mkdirSync(dest);
 }
+
 
 // Read default workspace configuration from package.json
 const properties: Record<string, PropertySchema<unknown>> = contributes.configuration.properties;
@@ -32,14 +25,5 @@ for (const key in properties) {
 }
 
 
-for (const [fileName, document] of Object.entries(templates)) {
-	const file = join(dist, fileName);
-
-	writeFileSync(file, JSON.stringify(new document(config['theme-chimera']), null, '\t'));
-
-	console.log(`[Generated] ${file}`);
-}
-
-
-// Blank line
-console.log();
+// Compile the theme templates for the default configuration.
+compile(dest, config['theme-chimera'], console);
