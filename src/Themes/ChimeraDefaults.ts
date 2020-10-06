@@ -39,7 +39,7 @@ export default class ChimeraDefaults extends Schema {
 			'editor.background': Color.Background,
 			'editor.foreground': Color.Foreground,
 			'editor.inactiveSelectionBackground': '#3A3D41',
-			'editor.lineHighlightBorder': Color.BackgroundLight1,
+			'editor.lineHighlightBorder': Color.CurrentLine.alpha(0.4),
 			'editor.stackFrameHighlightBackground': Color.WarningDark2,
 
 			'editorCodeLens.foreground': Color.Comment.alpha(0.333),
