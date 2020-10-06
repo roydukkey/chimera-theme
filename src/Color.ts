@@ -5,7 +5,7 @@ export default class Color {
 	// Main Colors
 	static readonly Background = base('#1E1F29');
 	static readonly CurrentLine = base('#44475A');
-	static readonly Selection = base('#6E799B');
+	static readonly Selection = base('#565A6D');
 	static readonly Foreground = base('#DEE0E3');
 	static readonly Comment = base('#6272A4');
 	static readonly Cyan = base('#B6F6FD');
