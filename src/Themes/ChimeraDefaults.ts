@@ -141,7 +141,7 @@ export default class ChimeraDefaults extends Schema {
 			'sideBarTitle.foreground': Color.Foreground,
 
 			'scrollbarSlider.activeBackground': Color.BackgroundLight4.alpha(0.752),
-			'scrollbarSlider.background': Color.BackgroundLight4.alpha(0.501),
+			'scrollbarSlider.background': Color.BackgroundLight4.alpha(0.4),
 			'scrollbarSlider.hoverBackground': Color.BackgroundLight4.alpha(0.65),
 
 			'settings.modifiedItemIndicator': Color.Modified.alpha(0.6),
