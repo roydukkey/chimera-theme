@@ -37,8 +37,11 @@ export default class ChimeraDefaults extends Schema {
 			'dropdown.background': Color.BackgroundLight3,
 
 			'editor.background': Color.Background,
+			'editor.findMatchBackground': Color.Selection.alpha(0.55),
+			'editor.findMatchHighlightBackground': Color.OrangeDark1.alpha(0.5),
 			'editor.foreground': Color.Foreground,
 			'editor.lineHighlightBorder': Color.CurrentLine.alpha(0.4),
+			'editor.rangeHighlightBackground': Color.OrangeDark1.alpha(0.1),
 			'editor.selectionBackground': Color.Selection.alpha(0.55),
 			'editor.selectionHighlightBackground': Color.Selection.alpha(0.3),
 			'editor.stackFrameHighlightBackground': Color.WarningDark2,
