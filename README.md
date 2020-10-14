@@ -9,10 +9,10 @@
 
 ## Install Chimera
 
-### Using VS Code
+### Using VS Marketplace
 
-1. Go to [vscode:extension/roydukkey.theme-chimera](vscode:extension/roydukkey.theme-chimera)
-2. Select it or press <kbd>Enter</kbd> to install
+1. Go to [https://marketplace.visualstudio.com/items?itemName=roydukkey.theme-chimera](https://marketplace.visualstudio.com/items?itemName=roydukkey.theme-chimera)
+2. Click the install button
 
 ### Using Git
 
