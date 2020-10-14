@@ -72,6 +72,7 @@ export default class ChimeraDefaults extends Schema {
 			'editorOverviewRuler.addedForeground': Color.Added.alpha(0.6),
 			'editorOverviewRuler.deletedForeground': Color.Deleted.alpha(0.6),
 			'editorOverviewRuler.errorForeground': Color.Error.alpha(0.6),
+			'editorOverviewRuler.findMatchForeground': Color.Orange.alpha(0.6),
 			'editorOverviewRuler.infoForeground': Color.Info.alpha(0.6),
 			'editorOverviewRuler.modifiedForeground': Color.Modified.alpha(0.6),
 			'editorOverviewRuler.warningForeground': Color.Warning.alpha(0.6),
