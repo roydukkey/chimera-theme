@@ -154,6 +154,7 @@ export default class ChimeraDefaults extends Schema {
 			'statusBar.noFolderBackground': Color.PurpleDark2,
 
 			'tab.inactiveBackground': Color.BackgroundLight2,
+			'tab.lastPinnedBorder': Color.BackgroundLight5,
 
 			'textBlockQuote.background': Color.BackgroundLight2,
 			'textBlockQuote.border': Color.PurpleDark2,
