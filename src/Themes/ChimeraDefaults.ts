@@ -40,6 +40,7 @@ export default class ChimeraDefaults extends Schema {
 			'editor.findMatchBackground': Color.Selection.alpha(0.55),
 			'editor.findMatchHighlightBackground': Color.OrangeDark1.alpha(0.5),
 			'editor.foreground': Color.Foreground,
+			'editor.hoverHighlightBackground': Color.Pink.alpha(0.2),
 			'editor.lineHighlightBorder': Color.CurrentLine.alpha(0.4),
 			'editor.rangeHighlightBackground': Color.OrangeDark1.alpha(0.1),
 			'editor.selectionBackground': Color.Selection.alpha(0.55),
