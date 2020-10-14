@@ -12,12 +12,8 @@
 
 * Add icon
 * Support render whitespace ([#1](https://github.com/roydukkey/chimera-theme/issues/1))
-	* `editorWhitespace.foreground`
 * Lighten the status bar for workspaces
-	* `statusBar.background`
 * Support status bar while debugging and no folder ([#2](https://github.com/roydukkey/chimera-theme/issues/2))
-	* `statusBar.debuggingBackground`
-	* `statusBar.noFolderBackground`
 * Fix spelling
 
 ## 0.1.0
