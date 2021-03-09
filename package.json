@@ -71,6 +71,7 @@
 		"color-string": "^1.5.3"
 	},
 	"devDependencies": {
+		"@roydukkey/eslint-config": "^1.0.5",
 		"@types/color": "^3.0.1",
 		"@types/color-string": "^1.5.0",
 		"@types/dot-object": "^2.1.2",
@@ -115,7 +116,6 @@
 		"ignorePatterns": [
 			"dist/*"
 		],
-		"parser": "@typescript-eslint/parser",
 		"parserOptions": {
 			"ecmaVersion": 6,
 			"sourceType": "module"
@@ -125,79 +125,7 @@
 			"eslint-plugin-tsdoc"
 		],
 		"extends": [
-			"eslint:recommended",
-			"plugin:@typescript-eslint/recommended"
-		],
-		"rules": {
-			"arrow-parens": [
-				"error",
-				"always"
-			],
-			"arrow-spacing": [
-				"error",
-				{
-					"before": true,
-					"after": true
-				}
-			],
-			"brace-style": [
-				"error",
-				"stroustrup",
-				{
-					"allowSingleLine": false
-				}
-			],
-			"comma-spacing": [
-				"error",
-				{
-					"before": false,
-					"after": true
-				}
-			],
-			"curly": [
-				"error"
-			],
-			"comma-dangle": [
-				"error",
-				"never"
-			],
-			"key-spacing": [
-				"error"
-			],
-			"object-curly-spacing": [
-				"error",
-				"always"
-			],
-			"quotes": [
-				"error",
-				"single"
-			],
-			"semi": [
-				"error"
-			],
-			"sort-imports": [
-				"error",
-				{
-					"ignoreCase": false,
-					"ignoreDeclarationSort": false,
-					"ignoreMemberSort": false,
-					"memberSyntaxSortOrder": [
-						"single",
-						"multiple",
-						"all",
-						"none"
-					]
-				}
-			],
-			"space-before-blocks": [
-				"error",
-				"always"
-			],
-			"space-before-function-paren": [
-				"error",
-				"always"
-			],
-			"tsdoc/syntax": "warn"
-		}
+			"@roydukkey/eslint-config"
+		]
 	}
 }

@@ -1,4 +1,4 @@
-import ScopeSettings from './ScopeSettings';
+import type ScopeSettings from './ScopeSettings';
 
 interface Scope {
 

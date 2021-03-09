@@ -1,6 +1,8 @@
 import Configuration from './Configuration';
+import type { ExtensionContext } from 'vscode';
+import type { WorkspaceConfiguration } from './Configuration';
 import compile from './compile';
-import { ExtensionContext, commands, window, workspace } from 'vscode';
+import { commands, window, workspace } from 'vscode';
 
 
 /**
@@ -32,7 +34,7 @@ export function activate (context: ExtensionContext): void {
  * Rebuilds the theme templates for the updated configuration.
  */
 function buildTheme (): void {
-	compile(__dirname, workspace.getConfiguration('theme-chimera'));
+	compile(__dirname, workspace.getConfiguration('theme-chimera') as unknown as WorkspaceConfiguration);
 }
 
 

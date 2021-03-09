@@ -3,33 +3,33 @@
  */
 interface PropertySchema<T> {
 
-	type?: string,
-	default: T,
+	type?: string;
+	default: T;
 
-	enum?: T[],
-	enumDescriptions?: string[],
+	enum?: T[];
+	enumDescriptions?: string[];
 
-	minimum?: T,
-	maximum?: T,
+	minimum?: T;
+	maximum?: T;
 
-	minLength?: number,
-	maxLength?: number,
+	minLength?: number;
+	maxLength?: number;
 
-	minItems?: number,
-	maxItems?: number,
+	minItems?: number;
+	maxItems?: number;
 
-	format?: string,
+	format?: string;
 
-	pattern?: RegExp,
-	patternErrorMessage?: string,
+	pattern?: RegExp;
+	patternErrorMessage?: string;
 
-	description?: string,
-	markdownDescription?: string,
+	description?: string;
+	markdownDescription?: string;
 
-	deprecationMessage?: string,
-	markdownDeprecationMessage?: string,
+	deprecationMessage?: string;
+	markdownDeprecationMessage?: string;
 
-	scope?: string
+	scope?: string;
 
 }
 

@@ -2,7 +2,7 @@ import compile from '../src/compile';
 import { contributes } from '../package.json';
 import { join } from 'path';
 import { str } from 'dot-object';
-import { PropertySchema, WorkspaceConfiguration } from '../src/Configuration';
+import type { PropertySchema, WorkspaceConfiguration } from '../src/Configuration';
 import { existsSync, mkdirSync } from 'fs';
 
 
@@ -16,15 +16,18 @@ if (!existsSync(dest)) {
 
 
 // Read default workspace configuration from package.json
-const properties: Record<string, PropertySchema<unknown>> = contributes.configuration.properties;
-const config: WorkspaceConfiguration = {};
+const properties: {
+	[key: string]: PropertySchema<unknown>;
+} = contributes.configuration.properties;
+
+const config: WorkspaceConfiguration = {} as unknown as WorkspaceConfiguration;
 
 for (const key in properties) {
 	if (Object.prototype.hasOwnProperty.call(properties, key)) {
-		str(key, properties[key].default, config);
+		str(key.replace('theme-chimera.', ''), properties[key].default, config);
 	}
 }
 
 
 // Compile the theme templates for the default configuration.
-compile(dest, config['theme-chimera'], console);
+compile(dest, config, console);

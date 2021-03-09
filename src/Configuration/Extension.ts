@@ -4,12 +4,12 @@ import { existsSync, readFileSync, writeFileSync } from 'fs';
 
 export default class ExtensionConfiguration {
 
-	private static documentPath = join(__dirname, './config.json');
+	private static readonly _documentPath = join(__dirname, './config.json');
 
-	private static config: {
-		isFirstRun?: boolean
-	} = existsSync(ExtensionConfiguration.documentPath)
-		? JSON.parse(readFileSync(ExtensionConfiguration.documentPath, 'utf8'))
+	private static _config: {
+		isFirstRun?: boolean;
+	} = existsSync(ExtensionConfiguration._documentPath)
+		? JSON.parse(readFileSync(ExtensionConfiguration._documentPath, 'utf8'))
 		: {};
 
 	/**
@@ -23,14 +23,14 @@ export default class ExtensionConfiguration {
 	 * Getter for whether or not the theme has run before.
 	 */
 	static get isFirstRun (): boolean {
-		return this.config.isFirstRun ?? true;
+		return this._config.isFirstRun ?? true;
 	}
 
 	/**
 	 * Setter for whether or not the theme has run before.
 	 */
 	static set isFirstRun (value: boolean) {
-		this.config.isFirstRun = value;
+		this._config.isFirstRun = value;
 		this.save();
 	}
 
@@ -38,7 +38,7 @@ export default class ExtensionConfiguration {
 	 * Save the extension's configuration to file.
 	 */
 	private static save (): void {
-		writeFileSync(this.documentPath, JSON.stringify(this.config, null, '\t'));
+		writeFileSync(this._documentPath, JSON.stringify(this._config, null, '\t'));
 	}
 
 }

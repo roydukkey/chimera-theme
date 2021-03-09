@@ -1,4 +1,4 @@
-import color from '../../util/color';
+import type color from '../../util/color';
 
 interface ScopeSettings {
 

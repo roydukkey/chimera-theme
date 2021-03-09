@@ -1,8 +1,10 @@
 /**
  * Represents the configuration of the workspace.
  */
-type WorkspaceConfiguration = {
-	[key: string]: never | WorkspaceConfiguration
-};
+interface WorkspaceConfiguration {
+	plus: {
+		contrastConstants: boolean;
+	};
+}
 
 export default WorkspaceConfiguration;

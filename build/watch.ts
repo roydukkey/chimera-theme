@@ -1,5 +1,7 @@
-import { ChildProcess, spawn } from 'child_process';
-import { TaskFunction, watch } from 'gulp';
+import type { ChildProcess } from 'child_process';
+import type { TaskFunction } from 'gulp';
+import { spawn } from 'child_process';
+import { watch } from 'gulp';
 
 
 const themeTask = (): ChildProcess => {

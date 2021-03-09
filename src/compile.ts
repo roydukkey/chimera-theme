@@ -1,7 +1,7 @@
 import Chimera from './Themes/Chimera';
 import ChimeraDefaults from './Themes/ChimeraDefaults';
 import ChimeraPlus from './Themes/ChimeraPlus';
-import { WorkspaceConfiguration } from './Configuration';
+import type { WorkspaceConfiguration } from './Configuration';
 import { join } from 'path';
 import { writeFileSync } from 'fs';
 

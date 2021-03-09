@@ -12,10 +12,10 @@ export default class Chimera extends Schema {
 		this.include = './chimera-defaults.json';
 
 		this.semanticTokenColors = {
-			newOperator: Color.Foreground,
-			stringLiteral: Color.Yellow,
-			customLiteral: Color.Foreground,
-			numberLiteral: Color.GreenYellowMix
+			newOperator: Color.foreground,
+			stringLiteral: Color.yellow,
+			customLiteral: Color.foreground,
+			numberLiteral: Color.greenYellowMix
 		};
 
 		this.tokenColors = [
@@ -26,7 +26,7 @@ export default class Chimera extends Schema {
 					'source.groovy.embedded'
 				],
 				settings: {
-					foreground: Color.Foreground
+					foreground: Color.foreground
 				}
 			}, {
 				scope: 'emphasis',
@@ -46,12 +46,12 @@ export default class Chimera extends Schema {
 			}, {
 				scope: 'comment',
 				settings: {
-					foreground: Color.Comment
+					foreground: Color.comment
 				}
 			}, {
 				scope: 'constant.language',
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: [
@@ -61,7 +61,7 @@ export default class Chimera extends Schema {
 					'keyword.operator.minus.exponent'
 				],
 				settings: {
-					foreground: Color.GreenYellowMix
+					foreground: Color.greenYellowMix
 				}
 			}, {
 				scope: 'constant.regexp',
@@ -71,17 +71,17 @@ export default class Chimera extends Schema {
 			}, {
 				scope: 'entity.name.tag',
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: 'entity.name.tag.css',
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: 'entity.other.attribute-name',
 				settings: {
-					foreground: Color.Cyan
+					foreground: Color.cyan
 				}
 			}, {
 				scope: [
@@ -96,41 +96,41 @@ export default class Chimera extends Schema {
 					'entity.other.attribute-name.scss'
 				],
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: 'invalid',
 				settings: {
-					foreground: Color.Red
+					foreground: Color.red
 				}
 			}, {
 				scope: 'markup.italic',
 				settings: {
 					fontStyle: 'italic',
-					foreground: Color.Orange
+					foreground: Color.orange
 				}
 			}, {
 				scope: 'markup.underline',
 				settings: {
 					fontStyle: 'underline',
-					foreground: Color.Orange
+					foreground: Color.orange
 				}
 			}, {
 				scope: 'markup.bold',
 				settings: {
 					fontStyle: 'bold',
-					foreground: Color.Orange
+					foreground: Color.orange
 				}
 			}, {
 				scope: 'markup.heading',
 				settings: {
 					fontStyle: 'bold',
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: 'markup.inserted',
 				settings: {
-					foreground: Color.GreenYellowMix
+					foreground: Color.greenYellowMix
 				}
 			}, {
 				scope: [
@@ -138,12 +138,12 @@ export default class Chimera extends Schema {
 					'markup.inline.raw'
 				],
 				settings: {
-					foreground: Color.Yellow
+					foreground: Color.yellow
 				}
 			}, {
 				scope: 'markup.changed',
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: [
@@ -151,13 +151,13 @@ export default class Chimera extends Schema {
 					'punctuation.definition.quote.begin.markdown'
 				],
 				settings: {
-					foreground: Color.Purple
+					foreground: Color.purple
 				}
 			}, {
 				name: 'brackets of XML/HTML tags',
 				scope: 'punctuation.definition.tag',
 				settings: {
-					foreground: Color.ForegroundDark2
+					foreground: Color.foregroundDark2
 				}
 			}, {
 				scope: [
@@ -165,37 +165,37 @@ export default class Chimera extends Schema {
 					'entity.name.function.preprocessor'
 				],
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: 'meta.preprocessor.string',
 				settings: {
-					foreground: Color.Yellow
+					foreground: Color.yellow
 				}
 			}, {
 				scope: 'meta.preprocessor.numeric',
 				settings: {
-					foreground: Color.GreenYellowMix
+					foreground: Color.greenYellowMix
 				}
 			}, {
 				scope: 'meta.structure.dictionary.key.python',
 				settings: {
-					foreground: Color.Cyan
+					foreground: Color.cyan
 				}
 			}, {
 				scope: 'meta.diff.header',
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: 'storage',
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: 'storage.type',
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: [
@@ -203,7 +203,7 @@ export default class Chimera extends Schema {
 					'keyword.operator.noexcept'
 				],
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: [
@@ -211,22 +211,22 @@ export default class Chimera extends Schema {
 					'meta.embedded.assembly'
 				],
 				settings: {
-					foreground: Color.Yellow
+					foreground: Color.yellow
 				}
 			}, {
 				scope: 'string.tag',
 				settings: {
-					foreground: Color.Yellow
+					foreground: Color.yellow
 				}
 			}, {
 				scope: 'string.value',
 				settings: {
-					foreground: Color.Yellow
+					foreground: Color.yellow
 				}
 			}, {
 				scope: 'string.regexp',
 				settings: {
-					foreground: Color.Red
+					foreground: Color.red
 				}
 			}, {
 				name: 'String interpolation',
@@ -236,13 +236,13 @@ export default class Chimera extends Schema {
 					'punctuation.section.embedded'
 				],
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				name: 'Reset JavaScript string interpolation expression',
 				scope: 'meta.template.expression',
 				settings: {
-					foreground: Color.Foreground
+					foreground: Color.foreground
 				}
 			}, {
 				scope: [
@@ -254,22 +254,22 @@ export default class Chimera extends Schema {
 					'source.coffee.embedded'
 				],
 				settings: {
-					foreground: Color.Cyan
+					foreground: Color.cyan
 				}
 			}, {
 				scope: 'keyword',
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: 'keyword.control',
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: 'keyword.operator',
 				settings: {
-					foreground: Color.Foreground
+					foreground: Color.foreground
 				}
 			}, {
 				scope: [
@@ -285,7 +285,7 @@ export default class Chimera extends Schema {
 					'keyword.operator.wordlike'
 				],
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: [
@@ -293,7 +293,7 @@ export default class Chimera extends Schema {
 					'keyword.control.unit'
 				],
 				settings: {
-					foreground: Color.GreenYellowMix
+					foreground: Color.greenYellowMix
 				}
 			}, {
 				scope: [
@@ -301,23 +301,23 @@ export default class Chimera extends Schema {
 					'punctuation.section.embedded.end.php'
 				],
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				name: 'php instanceof',
 				scope: 'keyword.operator.type.php',
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}, {
 				scope: 'support.function.git-rebase',
 				settings: {
-					foreground: Color.Cyan
+					foreground: Color.cyan
 				}
 			}, {
 				scope: 'constant.sha.git-rebase',
 				settings: {
-					foreground: Color.GreenYellowMix
+					foreground: Color.greenYellowMix
 				}
 			}, {
 				name: 'coloring of the Java import and package identifiers',
@@ -327,13 +327,13 @@ export default class Chimera extends Schema {
 					'storage.modifier.package.java'
 				],
 				settings: {
-					foreground: Color.Foreground
+					foreground: Color.foreground
 				}
 			}, {
 				name: 'this.self',
 				scope: 'variable.language',
 				settings: {
-					foreground: Color.Pink
+					foreground: Color.pink
 				}
 			}
 
