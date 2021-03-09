@@ -2,35 +2,37 @@
 	"ignorePaths": [
 		"dist",
 		"node_modules/**/{.*/**/,.*/**/.,,.}*",
+		".git/**",
+		"**/.DS_Store",
+		"*.lock.json",
 		"*-lock.json",
-		"*.vsix",
-		".DS_Store",
-		".git"
+		"*.vsix"
 	],
+	"dictionaries": [
+		"fullstack",
+		"lua",
+		"rust",
+		"typescript"
+	],
+	// Before adding a word, see if there is already a dictionary in which it is contained.
+	// http://github.com/streetsidesoftware/cspell-dicts
 	"words": [
 		"alignas",
-		"alignof",
 		"dbaeumer",
 		"desaturate",
 		"editorconfig",
 		"enummember",
 		"gitlens",
 		"noexcept",
-		"paren",
-		"parens",
 		"preprocessors",
 		"roydukkey",
-		"scrollbar",
 		"streetsidesoftware",
 		"stroustrup",
-		"submodule",
 		"tsdoc",
 		"uintptr",
 		"unsets",
-		"untracked",
 		"valpha",
 		"vendored",
-		"vsce",
 		"vsix",
 		"wordlike"
 	]
