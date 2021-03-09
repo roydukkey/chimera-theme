@@ -89,7 +89,7 @@
 		"typescript": "^4.0.3"
 	},
 	"scripts": {
-		"clean": "node -e \"fs.rmdirSync('./dist', { recursive: true }); const pack = './$npm_package_name-$npm_package_version.vsix'; fs.existsSync(pack) && fs.unlinkSync(pack)\"",
+		"clean": "node -e \"fs.rmSync('./dist', { recursive: true, force: true }); const pack = './$npm_package_name-$npm_package_version.vsix'; fs.existsSync(pack) && fs.unlinkSync(pack)\"",
 		"lint": "npm run lint:es && npm run lint:spelling",
 		"lint:es": "eslint --ext .ts gulpFile.ts ./src ./build",
 		"lint:spelling": "cspell --config './.vscode/cSpell.json' --no-progress '**/{.*/**/,.*/**/.,,.}*'",
