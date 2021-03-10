@@ -92,7 +92,6 @@ export default class Chimera extends Schema {
 					'entity.other.attribute-name.pseudo-class.css',
 					'entity.other.attribute-name.pseudo-element.css',
 					'source.css.less entity.other.attribute-name.id',
-					'entity.other.attribute-name.attribute.scss',
 					'entity.other.attribute-name.scss'
 				],
 				settings: {
