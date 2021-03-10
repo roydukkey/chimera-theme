@@ -1,5 +1,4 @@
 import Chimera from './Themes/Chimera';
-import ChimeraDefaults from './Themes/ChimeraDefaults';
 import ChimeraPlus from './Themes/ChimeraPlus';
 import type { WorkspaceConfiguration } from './Configuration';
 import { join } from 'path';
@@ -7,7 +6,6 @@ import { writeFileSync } from 'fs';
 
 
 const templates = {
-	'chimera-defaults.json': ChimeraDefaults,
 	'chimera.json': Chimera,
 	'chimera-plus.json': ChimeraPlus
 };
