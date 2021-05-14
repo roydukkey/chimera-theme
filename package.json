@@ -67,27 +67,27 @@
 		"vscode": "^1.49.0"
 	},
 	"dependencies": {
-		"color": "^3.1.2",
-		"color-string": "^1.5.3"
+		"color": "^3.1.3",
+		"color-string": "^1.5.5"
 	},
 	"devDependencies": {
-		"@roydukkey/eslint-config": "^1.0.5",
+		"@roydukkey/eslint-config": "^1.0.7",
 		"@types/color": "^3.0.1",
 		"@types/color-string": "^1.5.0",
 		"@types/dot-object": "^2.1.2",
-		"@types/gulp": "^4.0.7",
-		"@types/node": "^14.11.2",
+		"@types/gulp": "^4.0.8",
+		"@types/node": "^15.0.3",
 		"@types/vscode": "^1.49.0",
-		"@typescript-eslint/eslint-plugin": "^4.3.0",
-		"@typescript-eslint/parser": "^4.3.0",
+		"@typescript-eslint/eslint-plugin": "^4.23.0",
+		"@typescript-eslint/parser": "^4.23.0",
 		"clean-package": "^1.0.1",
-		"cspell": "5.3.1",
+		"cspell": "5.4.1",
 		"dot-object": "^2.1.4",
-		"eslint": "^7.10.0",
-		"eslint-plugin-tsdoc": "^0.2.7",
+		"eslint": "^7.26.0",
+		"eslint-plugin-tsdoc": "^0.2.14",
 		"gulp": "^4.0.2",
-		"ts-node": "^9.0.0",
-		"typescript": "^4.0.3"
+		"ts-node": "^9.1.1",
+		"typescript": "^4.2.4"
 	},
 	"scripts": {
 		"clean": "node -e \"fs.rmSync('./dist', { recursive: true, force: true }); const pack = './$npm_package_name-$npm_package_version.vsix'; fs.existsSync(pack) && fs.unlinkSync(pack)\"",
