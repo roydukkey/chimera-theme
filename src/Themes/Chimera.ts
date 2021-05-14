@@ -120,6 +120,8 @@ export default class Chimera extends Schema {
 			'menu.background': Color.backgroundLight1,
 			'menu.foreground': '#CCCCCC',
 
+			'notebook.selectedCellBackground': Color.backgroundLight3,
+
 			'panel.border': Color.backgroundLight5,
 
 			'panelTitle.activeBorder': Color.pinkDark1,
