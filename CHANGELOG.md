@@ -1,6 +1,19 @@
 # Changelog
 
-[//]: # (The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings)
+<!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
+<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.4.0...master) -->
+
+## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.4.0...master)
+
+* Fix `list.activeSelectionIconForeground`
+* Normalize SCSS attributes with CSS/LESS/SASS ([#19](https://github.com/roydukkey/chimera-theme/issues/19))
+* Configure decision on untrusted workspaces support ([#25](https://github.com/roydukkey/chimera-theme/issues/25))
+* Configure inlay hints ([#26](https://github.com/roydukkey/chimera-theme/issues/26))
+* Add `notebook.selectedCellBackground` ([#21](https://github.com/roydukkey/chimera-theme/issues/21))
+* Add `list.dropBackground`
+* Add colorization of string placeholders
+* Merge defaults into regular theme ([#20](https://github.com/roydukkey/chimera-theme/issues/20))
+* Update several internals
 
 ## [0.4.0](https://github.com/roydukkey/chimera-theme/compare/v0.3.0...v0.4.0)
 
