@@ -64,30 +64,32 @@
 	],
 	"qna": false,
 	"engines": {
+		"npm": "please-use-yarn",
+		"yarn": ">= 1.22.0",
 		"vscode": "^1.49.0"
 	},
 	"dependencies": {
-		"color": "^3.1.3",
-		"color-string": "^1.5.5"
+		"color": "^4.0.1",
+		"color-string": "^1.6.0"
 	},
 	"devDependencies": {
-		"@roydukkey/eslint-config": "^1.0.7",
-		"@types/color": "^3.0.1",
+		"@roydukkey/eslint-config": "^1.0.10",
+		"@types/color": "^3.0.2",
 		"@types/color-string": "^1.5.0",
 		"@types/dot-object": "^2.1.2",
-		"@types/gulp": "^4.0.8",
-		"@types/node": "^15.0.3",
+		"@types/gulp": "^4.0.9",
+		"@types/node": "^16.11.6",
 		"@types/vscode": "^1.49.0",
-		"@typescript-eslint/eslint-plugin": "^4.23.0",
-		"@typescript-eslint/parser": "^4.23.0",
-		"clean-package": "^1.0.1",
-		"cspell": "5.4.1",
+		"@typescript-eslint/eslint-plugin": "^5.2.0",
+		"@typescript-eslint/parser": "^5.2.0",
+		"clean-package": "^2.1.0",
+		"cspell": "^5.12.3",
 		"dot-object": "^2.1.4",
-		"eslint": "^7.26.0",
+		"eslint": "^8.1.0",
 		"eslint-plugin-tsdoc": "^0.2.14",
 		"gulp": "^4.0.2",
-		"ts-node": "^9.1.1",
-		"typescript": "^4.2.4"
+		"ts-node": "^10.4.0",
+		"typescript": "^4.4.4"
 	},
 	"scripts": {
 		"clean": "node -e \"fs.rmSync('./dist', { recursive: true, force: true }); const pack = './$npm_package_name-$npm_package_version.vsix'; fs.existsSync(pack) && fs.unlinkSync(pack)\"",
@@ -113,15 +115,15 @@
 		]
 	},
 	"eslintConfig": {
-		"ignorePatterns": [
-			"dist/*"
+		"extends": [
+			"@roydukkey/eslint-config"
 		],
 		"parserOptions": {
 			"ecmaVersion": 6,
 			"sourceType": "module"
 		},
-		"extends": [
-			"@roydukkey/eslint-config"
+		"ignorePatterns": [
+			"dist/*"
 		]
 	}
 }
