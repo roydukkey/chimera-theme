@@ -112,6 +112,7 @@ export default class Chimera extends Schema {
 			'inputValidation.warningForeground': Color.foreground.alpha(0.8),
 
 			'list.activeSelectionBackground': Color.pinkDark2,
+			'list.activeSelectionIconForeground': Color.foreground,
 			'list.dropBackground': Color.backgroundLight4,
 			'list.errorForeground': Color.error,
 			'list.focusBackground': Color.backgroundLight3,
