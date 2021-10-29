@@ -61,6 +61,9 @@ export default class Chimera extends Schema {
 			'editorIndentGuide.activeBackground': Color.backgroundLight4,
 			'editorIndentGuide.background': Color.backgroundLight2,
 
+			'editorInlayHint.foreground': Color.comment,
+			'editorInlayHint.background': '#0000',
+
 			'editorLink.activeForeground': Color.pink,
 
 			'editorLineNumber.activeForeground': Color.foreground,
