@@ -1,9 +1,9 @@
 # Changelog
 
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
-<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.4.0...master) -->
+<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.5.0...master) -->
 
-## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.4.0...master)
+## [0.5.0](https://github.com/roydukkey/chimera-theme/compare/v0.4.0...v0.5.0)
 
 * Fix `list.activeSelectionIconForeground`
 * Normalize SCSS attributes with CSS/LESS/SASS ([#19](https://github.com/roydukkey/chimera-theme/issues/19))
