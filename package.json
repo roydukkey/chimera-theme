@@ -34,6 +34,11 @@
 	},
 	"icon": "icon.png",
 	"main": "./dist/extension.js",
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		}
+	},
 	"contributes": {
 		"themes": [
 			{
