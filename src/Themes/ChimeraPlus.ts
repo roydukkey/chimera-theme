@@ -107,7 +107,8 @@ export default class ChimeraPlus extends Schema {
 					'variable',
 					'meta.definition.variable.name',
 					'support.variable',
-					'entity.name.variable'
+					'entity.name.variable',
+					'constant.other.placeholder'
 				],
 				settings: {
 					foreground: Color.cyan
