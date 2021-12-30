@@ -65,7 +65,7 @@
 		}
 	},
 	"activationEvents": [
-		"*"
+		"onStartupFinished"
 	],
 	"qna": false,
 	"engines": {
