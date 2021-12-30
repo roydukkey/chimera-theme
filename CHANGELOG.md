@@ -1,9 +1,9 @@
 # Changelog
 
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
-<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.5.0...master) -->
+<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.6.0...master) -->
 
-## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.5.0...master)
+## [0.6.0](https://github.com/roydukkey/chimera-theme/compare/v0.5.0...v0.6.0)
 
 * Add `editorRuler.foreground`
 * Change activation event from `*` to `onStartupFinished`
