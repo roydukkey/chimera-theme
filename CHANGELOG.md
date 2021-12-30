@@ -3,6 +3,10 @@
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
 <!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.5.0...master) -->
 
+## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.5.0...master)
+
+* Add `editorRuler.foreground`
+
 ## [0.5.0](https://github.com/roydukkey/chimera-theme/compare/v0.4.0...v0.5.0)
 
 * Fix `list.activeSelectionIconForeground`

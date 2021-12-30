@@ -79,6 +79,8 @@ export default class Chimera extends Schema {
 			'editorOverviewRuler.modifiedForeground': Color.modified.alpha(0.6),
 			'editorOverviewRuler.warningForeground': Color.warning.alpha(0.6),
 
+			'editorRuler.foreground': Color.backgroundLight4,
+
 			'editorSuggestWidget.border': Color.backgroundLight1,
 
 			'editorWarning.foreground': Color.green,
