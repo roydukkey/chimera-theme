@@ -105,7 +105,7 @@
 		"build:extension": "webpack",
 		"build:colors": "ts-node -e \"require('fs').mkdirSync('./dist', { recursive: true }); require('fs').writeFileSync('./dist/colors.json', JSON.stringify({ default: new (require('./src/Colors')).default }, null, '\t'));\"",
 		"test": "yarn build --watch",
-		"test:browser": "yarn build && vscode-test-web --browserType=chromium --extensionDevelopmentPath=. .",
+		"test:browser": "yarn build && vscode-test-web --extensionDevelopmentPath=. .",
 		"vscode:prepublish": "yarn lint && yarn build --mode production --devtool hidden-source-map && clean-package",
 		"vsce:has-release-version": "node -e \"process.exit(Math.abs('$npm_package_version'.split('.')[1]) % 2 === 1);\"",
 		"vsce:package": "vsce package && clean-package restore",
