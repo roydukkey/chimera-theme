@@ -13,4 +13,5 @@ npm-debug.log
 *.backup
 *.cache
 *.vsix
+.vscode-test-web
 dist
