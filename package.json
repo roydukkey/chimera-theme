@@ -2,7 +2,7 @@
 	"name": "theme-chimera",
 	"displayName": "Chimera Theme",
 	"description": "A dark theme for Visual Studio Code inspired by the Dracula, Dark, and Dark+ themes",
-	"version": "0.7.0",
+	"version": "0.8.0",
 	"publisher": "roydukkey",
 	"author": {
 		"name": "roydukkey",

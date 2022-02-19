@@ -1,7 +1,19 @@
 # Changelog
 
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
-<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.6.0...master) -->
+<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.8.0...master) -->
+
+## [0.8.0](https://github.com/roydukkey/chimera-theme/compare/v0.7.0...v0.8.0)
+
+* Rewrite extension to compile web release
+* Remove dependencies on `color` and `color-string` (now dev dependencies)
+* Improve development debugging and add web debugging
+* Replace `fs` usage and custom config with standard vscode library
+
+## [0.7.0](https://github.com/roydukkey/chimera-theme/compare/v0.6.0...v0.7.0)
+
+* Begin ~~annoying~~ [Pre-Release version scheme](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#pre-release-extensions)
+* No more Pre-Release version will be logged after this version
 
 ## [0.6.0](https://github.com/roydukkey/chimera-theme/compare/v0.5.0...v0.6.0)
 
