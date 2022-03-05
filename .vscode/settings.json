@@ -2,7 +2,11 @@
 	"files.exclude": {
 		"**/node_modules": true,
 		"package-lock.json": true,
-		"*.lock": true
+		"*.lock": true,
+	},
+	"search.exclude": {
+		"dist": true,
+		"out": true
 	},
 	// Turn off tsc task auto detection since we have the necessary tasks as npm scripts
 	"typescript.tsc.autoDetect": "off"

@@ -1,9 +1,12 @@
 .vscode/**
-.vscode-test/**
-build/**
+.vscode-test-web/**
 src/**
+out/**
+node_modules/**
 .gitignore
-gulpFile.ts
 package.json.backup
-tsconfig.args
-tsconfig.json
+webpack.config.js
+.yarnrc
+**/tsconfig.json
+**/*.map
+**/*.ts

@@ -1,13 +1,14 @@
 {
 	"name": "theme-chimera",
+	"displayName": "Chimera Theme",
 	"description": "A dark theme for Visual Studio Code inspired by the Dracula, Dark, and Dark+ themes",
-	"version": "0.6.0",
+	"version": "0.10.0",
+	"publisher": "roydukkey",
 	"author": {
 		"name": "roydukkey",
 		"email": "contact@changelog.me",
 		"url": "http://changelog.me"
 	},
-	"publisher": "roydukkey",
 	"license": "MIT",
 	"homepage": "https://github.com/roydukkey/chimera-theme/blob/master/README.md",
 	"repository": {
@@ -24,7 +25,6 @@
 		"dracula",
 		"theme"
 	],
-	"displayName": "Chimera Theme",
 	"categories": [
 		"Themes"
 	],
@@ -33,12 +33,7 @@
 		"theme": "dark"
 	},
 	"icon": "icon.png",
-	"main": "./dist/extension.js",
-	"capabilities": {
-		"untrustedWorkspaces": {
-			"supported": true
-		}
-	},
+	"browser": "./dist/extension.js",
 	"contributes": {
 		"themes": [
 			{
@@ -64,6 +59,11 @@
 			}
 		}
 	},
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		}
+	},
 	"activationEvents": [
 		"onStartupFinished"
 	],
@@ -71,51 +71,53 @@
 	"engines": {
 		"npm": "please-use-yarn",
 		"yarn": ">= 1.22.0",
-		"vscode": "^1.49.0"
-	},
-	"dependencies": {
-		"color": "^4.0.1",
-		"color-string": "^1.6.0"
+		"vscode": "^1.64.0"
 	},
 	"devDependencies": {
-		"@roydukkey/eslint-config": "^1.0.10",
-		"@types/color": "^3.0.2",
-		"@types/color-string": "^1.5.0",
+		"@roydukkey/eslint-config": "^1.0.11",
+		"@types/color": "^3.0.3",
+		"@types/color-string": "^1.5.2",
 		"@types/dot-object": "^2.1.2",
-		"@types/gulp": "^4.0.9",
-		"@types/node": "^16.11.6",
-		"@types/vscode": "^1.49.0",
-		"@typescript-eslint/eslint-plugin": "^5.2.0",
-		"@typescript-eslint/parser": "^5.2.0",
-		"clean-package": "^2.1.0",
-		"cspell": "^5.12.3",
+		"@types/node": "^17.0.17",
+		"@types/vscode": "^1.64.0",
+		"@types/webpack-env": "^1.16.3",
+		"@typescript-eslint/eslint-plugin": "^5.11.0",
+		"@typescript-eslint/parser": "^5.11.0",
+		"@vscode/test-web": "^0.0.22",
+		"clean-package": "^2.1.1",
+		"color": "^4.2.1",
+		"color-string": "^1.9.0",
+		"cspell": "^5.18.4",
 		"dot-object": "^2.1.4",
-		"eslint": "^8.1.0",
+		"eslint": "^8.9.0",
 		"eslint-plugin-tsdoc": "^0.2.14",
-		"gulp": "^4.0.2",
-		"ts-node": "^10.4.0",
-		"typescript": "^4.4.4"
+		"process": "^0.11.10",
+		"ts-loader": "^9.2.6",
+		"ts-node": "^10.5.0",
+		"typescript": "^4.5.5",
+		"webpack": "^5.68.0",
+		"webpack-cli": "^4.9.2"
 	},
 	"scripts": {
-		"clean": "node -e \"fs.rmSync('./dist', { recursive: true, force: true }); const pack = './$npm_package_name-$npm_package_version.vsix'; fs.existsSync(pack) && fs.unlinkSync(pack)\"",
-		"lint": "npm run lint:spelling && npm run lint:es",
-		"lint:es": "eslint --ext .ts ./gulpFile.ts ./src ./build",
+		"clean": "node -e \"['./dist', './.vscode-test-web', './$npm_package_name-$npm_package_version.vsix'].forEach((path) => fs.rmSync(path, { recursive: true, force: true }));\"",
+		"lint": "yarn lint:spelling && yarn lint:es",
+		"lint:es": "eslint ./src --ext .ts",
 		"lint:spelling": "cspell --config './.vscode/cSpell.json' --no-progress '**/{.*/**/,.*/**/.,,.}*'",
-		"build": "npm run clean && npm run build:extension",
-		"build:extension": "tsc ./src/extension.ts @./tsconfig.args",
-		"build:theme": "ts-node ./build/theme.ts",
-		"watch": "npm run build && gulp watch",
-		"postinstall": "npm run build",
-		"vscode:prepublish": "npm run lint && npm run build && clean-package",
+		"build": "yarn clean && yarn build:theme && yarn build:extension",
+		"build:theme": "ts-node ./build.ts",
+		"build:extension": "webpack",
+		"test": "yarn build --watch",
+		"test:browser": "yarn build && vscode-test-web --extensionDevelopmentPath=. .",
+		"vscode:prepublish": "yarn lint && yarn build --mode production --devtool hidden-source-map && clean-package",
+		"vsce:has-release-version": "node -e \"process.exit(Math.abs('$npm_package_version'.split('.')[1]) % 2 === 1);\"",
 		"vsce:package": "vsce package && clean-package restore",
-		"vsce:publish": "vsce publish && clean-package restore"
+		"vsce:publish": "yarn vsce:has-release-version && vsce publish && clean-package restore",
+		"vsce:publish:pre": "yarn vsce:has-release-version || vsce publish --pre-release && clean-package restore"
 	},
 	"clean-package": {
+		"extends": "clean-package/common",
 		"indent": "\t",
 		"remove": [
-			"clean-package",
-			"devDependencies",
-			"eslintConfig",
 			"scripts"
 		]
 	},
@@ -128,7 +130,8 @@
 			"sourceType": "module"
 		},
 		"ignorePatterns": [
-			"dist/*"
+			"dist/*",
+			"out/*"
 		]
 	}
 }

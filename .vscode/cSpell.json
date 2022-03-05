@@ -3,6 +3,7 @@
 	"ignorePaths": [
 		"dist",
 		"node_modules/**/{.*/**/,.*/**/.,,.}*",
+		".vscode-test-web/**",
 		".git/**",
 		"**/.DS_Store",
 		"*.lock.json",
@@ -12,6 +13,7 @@
 	"dictionaries": [
 		"fullstack",
 		"lua",
+		"npm",
 		"rust",
 		"typescript"
 	],
@@ -19,12 +21,14 @@
 	// http://github.com/streetsidesoftware/cspell-dicts
 	"words": [
 		"alignas",
+		"amodio",
 		"dbaeumer",
 		"desaturate",
 		"editorconfig",
 		"enummember",
 		"gitlens",
 		"noexcept",
+		"nosources",
 		"preprocessors",
 		"roydukkey",
 		"streetsidesoftware",

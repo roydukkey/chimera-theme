@@ -1,15 +1,21 @@
 {
 	"compilerOptions": {
-		"lib": [ "es6" ],
-		"target": "es6",
+		"target": "es2020",
+		"lib": [
+			"es6",
+			"WebWorker"
+		],
 		"module": "commonjs",
 		"outDir": "./dist",
 		"rootDir": "./",
+		"baseUrl": "./src",
 		"resolveJsonModule": true,
-		"sourceMap": false,
+		"sourceMap": true,
 		"strict": true,
 		"noImplicitAny": true,
 		"noImplicitThis": true,
+		"noImplicitReturns": true,
+		"noUnusedParameters": true,
 		"removeComments": true
 	},
 	"exclude": [

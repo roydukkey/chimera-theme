@@ -1,6 +1,11 @@
-import Color from '../Color';
+// ================================================================= //
+// Copyright (c) roydukkey. All rights reserved.                     //
+// ================================================================= //
+
+import Colors from '../Colors';
 import Schema from './Schema';
 import type { WorkspaceConfiguration } from '../Configuration';
+
 
 export default class ChimeraPlus extends Schema {
 
@@ -15,10 +20,10 @@ export default class ChimeraPlus extends Schema {
 		this.include = './chimera.json';
 
 		this.semanticTokenColors = {
-			newOperator: Color.purple,
-			stringLiteral: Color.yellow,
-			customLiteral: Color.orange,
-			numberLiteral: Color.greenYellowMix
+			newOperator: Colors.purple,
+			stringLiteral: Colors.yellow,
+			customLiteral: Colors.orange,
+			numberLiteral: Colors.greenYellowMix
 		};
 
 		this.tokenColors = [
@@ -33,7 +38,7 @@ export default class ChimeraPlus extends Schema {
 					'entity.name.operator.custom-literal' // See https://en.cppreference.com/w/cpp/language/user_literal
 				],
 				settings: {
-					foreground: Color.orange
+					foreground: Colors.orange
 				}
 			}, {
 				name: 'Types declaration and references',
@@ -73,7 +78,7 @@ export default class ChimeraPlus extends Schema {
 					'storage.type.primitive.groovy'
 				],
 				settings: {
-					foreground: Color.green
+					foreground: Colors.green
 				}
 			}, {
 				name: 'Types declaration and references, TS grammar specific',
@@ -86,7 +91,7 @@ export default class ChimeraPlus extends Schema {
 					'entity.other.inherited-class'
 				],
 				settings: {
-					foreground: Color.green
+					foreground: Colors.green
 				}
 			}, {
 				name: 'Control flow / Special keywords',
@@ -99,7 +104,7 @@ export default class ChimeraPlus extends Schema {
 					'entity.name.operator'
 				],
 				settings: {
-					foreground: Color.purple
+					foreground: Colors.purple
 				}
 			}, {
 				name: 'Variable and parameter name',
@@ -111,7 +116,7 @@ export default class ChimeraPlus extends Schema {
 					'constant.other.placeholder'
 				],
 				settings: {
-					foreground: Color.cyan
+					foreground: Colors.cyan
 				}
 			}
 
@@ -127,7 +132,7 @@ export default class ChimeraPlus extends Schema {
 						'variable.other.enummember'
 					],
 					settings: {
-						foreground: Color.cyanLight1
+						foreground: Colors.cyanLight1
 					}
 				}
 
@@ -140,13 +145,13 @@ export default class ChimeraPlus extends Schema {
 				name: 'Object keys, TS grammar specific',
 				scope: 'meta.object-literal.key',
 				settings: {
-					foreground: Color.cyan
+					foreground: Colors.cyan
 				}
 			}, {
 				name: 'Object key-value separator, TS grammar specific',
 				scope: 'meta.object-literal.key punctuation.separator.key-value',
 				settings: {
-					foreground: Color.foreground
+					foreground: Colors.foreground
 				}
 			}, {
 				name: 'CSS property value',
@@ -155,12 +160,12 @@ export default class ChimeraPlus extends Schema {
 					'support.constant.font-name',
 					'support.constant.media-type',
 					'support.constant.media',
-					'constant.other.color.rgb-value',
+					'constant.other.colors.rgb-value',
 					'constant.other.rgb-value',
 					'support.constant.color'
 				],
 				settings: {
-					foreground: Color.yellow
+					foreground: Colors.yellow
 				}
 			}, {
 				name: 'Regular expression groups',
@@ -174,7 +179,7 @@ export default class ChimeraPlus extends Schema {
 					'support.other.parenthesis.regexp'
 				],
 				settings: {
-					foreground: Color.yellow
+					foreground: Colors.yellow
 				}
 			}, {
 				scope: [
@@ -184,7 +189,7 @@ export default class ChimeraPlus extends Schema {
 					'constant.character.set.regexp'
 				],
 				settings: {
-					foreground: Color.red
+					foreground: Colors.red
 				}
 			}, {
 				scope: [
@@ -192,7 +197,7 @@ export default class ChimeraPlus extends Schema {
 					'keyword.control.anchor.regexp'
 				],
 				settings: {
-					foreground: Color.orange
+					foreground: Colors.orange
 				}
 			}, {
 				scope: 'keyword.operator.quantifier.regexp',
@@ -202,7 +207,7 @@ export default class ChimeraPlus extends Schema {
 			}, {
 				scope: 'constant.character',
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: 'constant.character.escape',
@@ -220,7 +225,7 @@ export default class ChimeraPlus extends Schema {
 					'source.sass keyword'
 				],
 				settings: {
-					foreground: Color.red
+					foreground: Colors.red
 				}
 			}, {
 				scope: [
@@ -230,7 +235,7 @@ export default class ChimeraPlus extends Schema {
 					'keyword.control.at-rule.extend.scss'
 				],
 				settings: {
-					foreground: Color.green
+					foreground: Colors.green
 				}
 			}, {
 				scope: [
@@ -239,7 +244,7 @@ export default class ChimeraPlus extends Schema {
 					'keyword.control.error.scss'
 				],
 				settings: {
-					foreground: Color.red
+					foreground: Colors.red
 				}
 			}, {
 				name: 'Markdown Link/Image',
@@ -249,7 +254,7 @@ export default class ChimeraPlus extends Schema {
 					'punctuation.definition.metadata.markdown'
 				],
 				settings: {
-					foreground: Color.cyan
+					foreground: Colors.cyan
 				}
 			}, {
 				name: 'Markdown Link Title/Description',
@@ -258,7 +263,7 @@ export default class ChimeraPlus extends Schema {
 					'string.other.link.description.markdown'
 				],
 				settings: {
-					foreground: Color.green
+					foreground: Colors.green
 				}
 			}, {
 				scope: [
@@ -266,7 +271,7 @@ export default class ChimeraPlus extends Schema {
 					'variable.parameter.handlebars'
 				],
 				settings: {
-					foreground: Color.green
+					foreground: Colors.green
 				}
 			}, {
 				name: 'C# Preprocessors All',
@@ -275,7 +280,7 @@ export default class ChimeraPlus extends Schema {
 					'meta.preprocessor.cs string'
 				],
 				settings: {
-					foreground: Color.yellow.alpha(0.498)
+					foreground: Colors['meta.preprocessor.cs.yellow']
 				}
 			}, {
 				name: 'C# Preprocessors Directives',
@@ -284,7 +289,7 @@ export default class ChimeraPlus extends Schema {
 					'meta.preprocessor.cs punctuation.separator.hash'
 				],
 				settings: {
-					foreground: Color.purple.alpha(0.498)
+					foreground: Colors['meta.preprocessor.cs.purple']
 				}
 			}, {
 				name: 'C# Preprocessors Operator & Parenthesis',
@@ -293,25 +298,25 @@ export default class ChimeraPlus extends Schema {
 					'meta.preprocessor.cs punctuation.parenthesis'
 				],
 				settings: {
-					foreground: Color.foreground.alpha(0.498)
+					foreground: Colors['meta.preprocessor.cs.foreground']
 				}
 			}, {
 				name: 'C# Preprocessors Symbols',
 				scope: 'meta.preprocessor.cs entity.name.variable.preprocessor.symbol.cs',
 				settings: {
-					foreground: Color.cyan.alpha(0.498)
+					foreground: Colors['meta.preprocessor.cs.cyan']
 				}
 			}, {
 				name: 'C# Preprocessors Numeric',
 				scope: 'meta.preprocessor.cs constant.numeric',
 				settings: {
-					foreground: Color.greenYellowMix.alpha(0.498)
+					foreground: Colors['meta.preprocessor.cs.greenYellowMix']
 				}
 			}, {
 				name: 'PHP Inheritance Separator',
 				scope: 'punctuation.separator.inheritance.php',
 				settings: {
-					foreground: Color.foreground
+					foreground: Colors.foreground
 				}
 			}, {
 				name: 'PHP Using Namespace and Alias',
@@ -320,7 +325,7 @@ export default class ChimeraPlus extends Schema {
 					'support.other.namespace.php'
 				],
 				settings: {
-					foreground: Color.green
+					foreground: Colors.green
 				}
 			}
 

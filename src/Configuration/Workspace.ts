@@ -2,4 +2,13 @@
 // Copyright (c) roydukkey. All rights reserved.                     //
 // ================================================================= //
 
-export { default } from './Schema';
+/**
+ * Represents the configuration of the workspace.
+ */
+interface WorkspaceConfiguration {
+	plus: {
+		contrastConstants: boolean;
+	};
+}
+
+export default WorkspaceConfiguration;

@@ -1,5 +1,10 @@
-import Color from '../Color';
+// ================================================================= //
+// Copyright (c) roydukkey. All rights reserved.                     //
+// ================================================================= //
+
+import Colors from '../Colors';
 import Schema from './Schema';
+
 
 export default class Chimera extends Schema {
 
@@ -10,174 +15,174 @@ export default class Chimera extends Schema {
 		super('Chimera');
 
 		this.colors = {
-			'activityBar.background': Color.backgroundLight2,
-			'activityBar.foreground': Color.foreground,
-			'activityBar.inactiveForeground': Color.foregroundPurpleMix.alpha(0.333),
+			'activityBar.background': Colors.backgroundLight2,
+			'activityBar.foreground': Colors.foreground,
+			'activityBar.inactiveForeground': Colors['activityBar.inactiveForeground'],
 
-			'activityBarBadge.background': Color.pinkDark1,
-			'activityBarBadge.foreground': Color.foreground,
+			'activityBarBadge.background': Colors.pinkDark1,
+			'activityBarBadge.foreground': Colors.foreground,
 
-			'badge.background': Color.backgroundLight4,
-			'badge.foreground': Color.foreground,
+			'badge.background': Colors.backgroundLight4,
+			'badge.foreground': Colors.foreground,
 
-			'button.background': Color.pinkDark3,
+			'button.background': Colors.pinkDark3,
 
-			'debugToolBar.background': Color.backgroundLight3,
+			'debugToolBar.background': Colors.backgroundLight3,
 
-			'diffEditor.diagonalFill': Color.backgroundLight3,
-			'diffEditor.insertedTextBackground': Color.greenDark1.alpha(0.266),
-			'diffEditor.removedTextBackground': Color.redDark1.alpha(0.266),
+			'diffEditor.diagonalFill': Colors.backgroundLight3,
+			'diffEditor.insertedTextBackground': Colors['diffEditor.insertedTextBackground'],
+			'diffEditor.removedTextBackground': Colors['diffEditor.removedTextBackground'],
 
-			'dropdown.background': Color.backgroundLight3,
+			'dropdown.background': Colors.backgroundLight3,
 
-			'editor.background': Color.background,
-			'editor.findMatchBackground': Color.selection.alpha(0.55),
-			'editor.findMatchHighlightBackground': Color.orangeDark1.alpha(0.5),
-			'editor.foreground': Color.foreground,
-			'editor.hoverHighlightBackground': Color.pink.alpha(0.2),
-			'editor.lineHighlightBorder': Color.currentLine.alpha(0.4),
-			'editor.rangeHighlightBackground': Color.orangeDark1.alpha(0.1),
-			'editor.selectionBackground': Color.selection.alpha(0.55),
-			'editor.selectionHighlightBackground': Color.selection.alpha(0.3),
-			'editor.stackFrameHighlightBackground': Color.warningDark2,
-			'editor.wordHighlightBackground': Color.purple.alpha(0.2),
-			'editor.wordHighlightStrongBackground': Color.purple.alpha(0.4),
+			'editor.background': Colors.background,
+			'editor.findMatchBackground': Colors['editor.findMatchBackground'],
+			'editor.findMatchHighlightBackground': Colors['editor.findMatchHighlightBackground'],
+			'editor.foreground': Colors.foreground,
+			'editor.hoverHighlightBackground': Colors['editor.hoverHighlightBackground'],
+			'editor.lineHighlightBorder': Colors['editor.lineHighlightBorder'],
+			'editor.rangeHighlightBackground': Colors['editor.rangeHighlightBackground'],
+			'editor.selectionBackground': Colors['editor.selectionBackground'],
+			'editor.selectionHighlightBackground': Colors['editor.selectionHighlightBackground'],
+			'editor.stackFrameHighlightBackground': Colors.warningDark2,
+			'editor.wordHighlightBackground': Colors['editor.wordHighlightBackground'],
+			'editor.wordHighlightStrongBackground': Colors['editor.wordHighlightStrongBackground'],
 
-			'editorCodeLens.foreground': Color.comment.alpha(0.333),
+			'editorCodeLens.foreground': Colors['editorCodeLens.foreground'],
 
-			'editorError.foreground': Color.error,
+			'editorError.foreground': Colors.error,
 
-			'editorGroup.border': Color.backgroundLight1,
-			'editorGroup.dropBackground': Color.backgroundLight4.alpha(0.6),
-			'editorGroupHeader.tabsBackground': Color.backgroundLight1,
+			'editorGroup.border': Colors.backgroundLight1,
+			'editorGroup.dropBackground': Colors['editorGroup.dropBackground'],
+			'editorGroupHeader.tabsBackground': Colors.backgroundLight1,
 
-			'editorGutter.addedBackground': Color.added.alpha(0.6),
-			'editorGutter.commentRangeForeground': Color.comment,
-			'editorGutter.deletedBackground': Color.deleted.alpha(0.6),
-			'editorGutter.modifiedBackground': Color.modified.alpha(0.6),
+			'editorGutter.addedBackground': Colors['editorGutter.addedBackground'],
+			'editorGutter.commentRangeForeground': Colors.comment,
+			'editorGutter.deletedBackground': Colors['editorGutter.deletedBackground'],
+			'editorGutter.modifiedBackground': Colors['editorGutter.modifiedBackground'],
 
-			'editorHoverWidget.border': Color.backgroundLight3,
+			'editorHoverWidget.border': Colors.backgroundLight3,
 
-			'editorIndentGuide.activeBackground': Color.backgroundLight4,
-			'editorIndentGuide.background': Color.backgroundLight2,
+			'editorIndentGuide.activeBackground': Colors.backgroundLight4,
+			'editorIndentGuide.background': Colors.backgroundLight2,
 
-			'editorInlayHint.foreground': Color.comment,
+			'editorInlayHint.foreground': Colors.comment,
 			'editorInlayHint.background': '#0000',
 
-			'editorLink.activeForeground': Color.pink,
+			'editorLink.activeForeground': Colors.pink,
 
-			'editorLineNumber.activeForeground': Color.foreground,
-			'editorLineNumber.foreground': Color.comment,
+			'editorLineNumber.activeForeground': Colors.foreground,
+			'editorLineNumber.foreground': Colors.comment,
 
-			'editorOverviewRuler.addedForeground': Color.added.alpha(0.6),
-			'editorOverviewRuler.deletedForeground': Color.deleted.alpha(0.6),
-			'editorOverviewRuler.errorForeground': Color.error.alpha(0.6),
-			'editorOverviewRuler.findMatchForeground': Color.orange.alpha(0.6),
-			'editorOverviewRuler.wordHighlightForeground': Color.purple.alpha(0.2),
-			'editorOverviewRuler.wordHighlightStrongForeground': Color.purple.alpha(0.4),
-			'editorOverviewRuler.infoForeground': Color.info.alpha(0.6),
-			'editorOverviewRuler.modifiedForeground': Color.modified.alpha(0.6),
-			'editorOverviewRuler.warningForeground': Color.warning.alpha(0.6),
+			'editorOverviewRuler.addedForeground': Colors['editorOverviewRuler.addedForeground'],
+			'editorOverviewRuler.deletedForeground': Colors['editorOverviewRuler.deletedForeground'],
+			'editorOverviewRuler.errorForeground': Colors['editorOverviewRuler.errorForeground'],
+			'editorOverviewRuler.findMatchForeground': Colors['editorOverviewRuler.findMatchForeground'],
+			'editorOverviewRuler.wordHighlightForeground': Colors['editorOverviewRuler.wordHighlightForeground'],
+			'editorOverviewRuler.wordHighlightStrongForeground': Colors['editorOverviewRuler.wordHighlightStrongForeground'],
+			'editorOverviewRuler.infoForeground': Colors['editorOverviewRuler.infoForeground'],
+			'editorOverviewRuler.modifiedForeground': Colors['editorOverviewRuler.modifiedForeground'],
+			'editorOverviewRuler.warningForeground': Colors['editorOverviewRuler.warningForeground'],
 
-			'editorRuler.foreground': Color.backgroundLight4,
+			'editorRuler.foreground': Colors.backgroundLight4,
 
-			'editorSuggestWidget.border': Color.backgroundLight1,
+			'editorSuggestWidget.border': Colors.backgroundLight1,
 
-			'editorWarning.foreground': Color.green,
+			'editorWarning.foreground': Colors.green,
 
-			'editorWhitespace.foreground': Color.backgroundLight4,
+			'editorWhitespace.foreground': Colors.backgroundLight4,
 
-			'editorWidget.background': Color.backgroundLight1,
+			'editorWidget.background': Colors.backgroundLight1,
 
-			'focusBorder': Color.pinkDark1,
+			'focusBorder': Colors.pinkDark1,
 
-			'gitDecoration.addedResourceForeground': Color.added,
-			'gitDecoration.conflictingResourceForeground': Color.conflict,
-			'gitDecoration.deletedResourceForeground': Color.deleted,
-			'gitDecoration.ignoredResourceForeground': Color.ignored,
-			'gitDecoration.modifiedResourceForeground': Color.modified,
-			'gitDecoration.submoduleResourceForeground': Color.purple,
-			'gitDecoration.untrackedResourceForeground': Color.untracked,
+			'gitDecoration.addedResourceForeground': Colors.added,
+			'gitDecoration.conflictingResourceForeground': Colors.conflict,
+			'gitDecoration.deletedResourceForeground': Colors.deleted,
+			'gitDecoration.ignoredResourceForeground': Colors.ignored,
+			'gitDecoration.modifiedResourceForeground': Colors.modified,
+			'gitDecoration.submoduleResourceForeground': Colors.purple,
+			'gitDecoration.untrackedResourceForeground': Colors.untracked,
 
-			'gitlens.trailingLineForegroundColor': Color.comment.alpha(0.333),
+			'gitlens.trailingLineForegroundColor': Colors['gitlens.trailingLineForegroundColor'],
 
-			'input.background': Color.backgroundLight3,
-			'input.placeholderForeground': Color.foregroundDark1,
+			'input.background': Colors.backgroundLight3,
+			'input.placeholderForeground': Colors.foregroundDark1,
 
-			'inputOption.activeBorder': Color.pinkDark1,
+			'inputOption.activeBorder': Colors.pinkDark1,
 
-			'inputValidation.errorBackground': Color.errorDark2,
-			'inputValidation.errorBorder': Color.errorDark1,
-			'inputValidation.errorForeground': Color.foreground.alpha(0.8),
-			'inputValidation.warningBackground': Color.warningDark2,
-			'inputValidation.warningBorder': Color.warningDark1,
-			'inputValidation.warningForeground': Color.foreground.alpha(0.8),
+			'inputValidation.errorBackground': Colors.errorDark2,
+			'inputValidation.errorBorder': Colors.errorDark1,
+			'inputValidation.errorForeground': Colors['inputValidation.errorForeground'],
+			'inputValidation.warningBackground': Colors.warningDark2,
+			'inputValidation.warningBorder': Colors.warningDark1,
+			'inputValidation.warningForeground': Colors['inputValidation.warningForeground'],
 
-			'list.activeSelectionBackground': Color.pinkDark2,
-			'list.activeSelectionIconForeground': Color.foreground,
-			'list.dropBackground': Color.backgroundLight4,
-			'list.errorForeground': Color.error,
-			'list.focusBackground': Color.backgroundLight3,
-			'list.highlightForeground': Color.pink,
-			'list.hoverBackground': Color.backgroundLight2,
-			'list.inactiveSelectionBackground': Color.backgroundLight3,
-			'list.warningForeground': Color.green,
+			'list.activeSelectionBackground': Colors.pinkDark2,
+			'list.activeSelectionIconForeground': Colors.foreground,
+			'list.dropBackground': Colors.backgroundLight4,
+			'list.errorForeground': Colors.error,
+			'list.focusBackground': Colors.backgroundLight3,
+			'list.highlightForeground': Colors.pink,
+			'list.hoverBackground': Colors.backgroundLight2,
+			'list.inactiveSelectionBackground': Colors.backgroundLight3,
+			'list.warningForeground': Colors.green,
 
-			'menu.background': Color.backgroundLight1,
+			'menu.background': Colors.backgroundLight1,
 			'menu.foreground': '#CCCCCC',
 
-			'notebook.selectedCellBackground': Color.backgroundLight3,
+			'notebook.selectedCellBackground': Colors.backgroundLight3,
 
-			'panel.border': Color.backgroundLight5,
+			'panel.border': Colors.backgroundLight5,
 
-			'panelTitle.activeBorder': Color.pinkDark1,
-			'panelTitle.inactiveForeground': Color.comment,
+			'panelTitle.activeBorder': Colors.pinkDark1,
+			'panelTitle.inactiveForeground': Colors.comment,
 
-			'pickerGroup.border': Color.backgroundLight5,
-			'pickerGroup.foreground': Color.pink,
+			'pickerGroup.border': Colors.backgroundLight5,
+			'pickerGroup.foreground': Colors.pink,
 
-			'progressBar.background': Color.purple,
+			'progressBar.background': Colors.purple,
 
-			'sideBar.background': Color.backgroundLight1,
+			'sideBar.background': Colors.backgroundLight1,
 
 			'sideBarSectionHeader.background': '#0000',
-			'sideBarSectionHeader.border': Color.backgroundLight5,
+			'sideBarSectionHeader.border': Colors.backgroundLight5,
 
-			'sideBarTitle.foreground': Color.foreground,
+			'sideBarTitle.foreground': Colors.foreground,
 
-			'scrollbarSlider.activeBackground': Color.backgroundLight4.alpha(0.752),
-			'scrollbarSlider.background': Color.backgroundLight4.alpha(0.4),
-			'scrollbarSlider.hoverBackground': Color.backgroundLight4.alpha(0.65),
+			'scrollbarSlider.activeBackground': Colors['scrollbarSlider.activeBackground'],
+			'scrollbarSlider.background': Colors['scrollbarSlider.background'],
+			'scrollbarSlider.hoverBackground': Colors['scrollbarSlider.hoverBackground'],
 
-			'settings.modifiedItemIndicator': Color.modified.alpha(0.6),
+			'settings.modifiedItemIndicator': Colors['settings.modifiedItemIndicator'],
 
-			'statusBar.background': Color.pinkDark3,
-			'statusBar.debuggingBackground': Color.orangeDark1,
-			'statusBar.foreground': Color.foreground,
-			'statusBar.noFolderBackground': Color.purpleDark2,
+			'statusBar.background': Colors.pinkDark3,
+			'statusBar.debuggingBackground': Colors.orangeDark1,
+			'statusBar.foreground': Colors.foreground,
+			'statusBar.noFolderBackground': Colors.purpleDark2,
 
-			'tab.inactiveBackground': Color.backgroundLight2,
-			'tab.lastPinnedBorder': Color.backgroundLight5,
+			'tab.inactiveBackground': Colors.backgroundLight2,
+			'tab.lastPinnedBorder': Colors.backgroundLight5,
 
-			'textBlockQuote.background': Color.backgroundLight2,
-			'textBlockQuote.border': Color.purpleDark2,
+			'textBlockQuote.background': Colors.backgroundLight2,
+			'textBlockQuote.border': Colors.purpleDark2,
 
-			'textLink.activeForeground': Color.pink,
-			'textLink.foreground': Color.pink,
+			'textLink.activeForeground': Colors.pink,
+			'textLink.foreground': Colors.pink,
 
-			'titleBar.activeBackground': Color.backgroundLight4,
-			'titleBar.inactiveBackground': Color.backgroundLight1,
+			'titleBar.activeBackground': Colors.backgroundLight4,
+			'titleBar.inactiveBackground': Colors.backgroundLight1,
 
-			'tree.indentGuidesStroke': Color.foreground.alpha(0.266)
+			'tree.indentGuidesStroke': Colors['tree.indentGuidesStroke']
 		};
 
 		this.semanticHighlighting = true;
 
 		this.semanticTokenColors = {
-			newOperator: Color.foreground,
-			stringLiteral: Color.yellow,
-			customLiteral: Color.foreground,
-			numberLiteral: Color.greenYellowMix
+			newOperator: Colors.foreground,
+			stringLiteral: Colors.yellow,
+			customLiteral: Colors.foreground,
+			numberLiteral: Colors.greenYellowMix
 		};
 
 		this.tokenColors = [
@@ -188,7 +193,7 @@ export default class Chimera extends Schema {
 					'source.groovy.embedded'
 				],
 				settings: {
-					foreground: Color.foreground
+					foreground: Colors.foreground
 				}
 			}, {
 				scope: 'emphasis',
@@ -208,12 +213,12 @@ export default class Chimera extends Schema {
 			}, {
 				scope: 'comment',
 				settings: {
-					foreground: Color.comment
+					foreground: Colors.comment
 				}
 			}, {
 				scope: 'constant.language',
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: [
@@ -223,7 +228,7 @@ export default class Chimera extends Schema {
 					'keyword.operator.minus.exponent'
 				],
 				settings: {
-					foreground: Color.greenYellowMix
+					foreground: Colors.greenYellowMix
 				}
 			}, {
 				scope: 'constant.regexp',
@@ -233,17 +238,17 @@ export default class Chimera extends Schema {
 			}, {
 				scope: 'entity.name.tag',
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: 'entity.name.tag.css',
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: 'entity.other.attribute-name',
 				settings: {
-					foreground: Color.cyan
+					foreground: Colors.cyan
 				}
 			}, {
 				scope: [
@@ -257,41 +262,41 @@ export default class Chimera extends Schema {
 					'entity.other.attribute-name.scss'
 				],
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: 'invalid',
 				settings: {
-					foreground: Color.red
+					foreground: Colors.red
 				}
 			}, {
 				scope: 'markup.italic',
 				settings: {
 					fontStyle: 'italic',
-					foreground: Color.orange
+					foreground: Colors.orange
 				}
 			}, {
 				scope: 'markup.underline',
 				settings: {
 					fontStyle: 'underline',
-					foreground: Color.orange
+					foreground: Colors.orange
 				}
 			}, {
 				scope: 'markup.bold',
 				settings: {
 					fontStyle: 'bold',
-					foreground: Color.orange
+					foreground: Colors.orange
 				}
 			}, {
 				scope: 'markup.heading',
 				settings: {
 					fontStyle: 'bold',
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: 'markup.inserted',
 				settings: {
-					foreground: Color.greenYellowMix
+					foreground: Colors.greenYellowMix
 				}
 			}, {
 				scope: [
@@ -299,12 +304,12 @@ export default class Chimera extends Schema {
 					'markup.inline.raw'
 				],
 				settings: {
-					foreground: Color.yellow
+					foreground: Colors.yellow
 				}
 			}, {
 				scope: 'markup.changed',
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: [
@@ -312,13 +317,13 @@ export default class Chimera extends Schema {
 					'punctuation.definition.quote.begin.markdown'
 				],
 				settings: {
-					foreground: Color.purple
+					foreground: Colors.purple
 				}
 			}, {
 				name: 'brackets of XML/HTML tags',
 				scope: 'punctuation.definition.tag',
 				settings: {
-					foreground: Color.foregroundDark2
+					foreground: Colors.foregroundDark2
 				}
 			}, {
 				scope: [
@@ -326,37 +331,37 @@ export default class Chimera extends Schema {
 					'entity.name.function.preprocessor'
 				],
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: 'meta.preprocessor.string',
 				settings: {
-					foreground: Color.yellow
+					foreground: Colors.yellow
 				}
 			}, {
 				scope: 'meta.preprocessor.numeric',
 				settings: {
-					foreground: Color.greenYellowMix
+					foreground: Colors.greenYellowMix
 				}
 			}, {
 				scope: 'meta.structure.dictionary.key.python',
 				settings: {
-					foreground: Color.cyan
+					foreground: Colors.cyan
 				}
 			}, {
 				scope: 'meta.diff.header',
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: 'storage',
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: 'storage.type',
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: [
@@ -364,7 +369,7 @@ export default class Chimera extends Schema {
 					'keyword.operator.noexcept'
 				],
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: [
@@ -372,22 +377,22 @@ export default class Chimera extends Schema {
 					'meta.embedded.assembly'
 				],
 				settings: {
-					foreground: Color.yellow
+					foreground: Colors.yellow
 				}
 			}, {
 				scope: 'string.tag',
 				settings: {
-					foreground: Color.yellow
+					foreground: Colors.yellow
 				}
 			}, {
 				scope: 'string.value',
 				settings: {
-					foreground: Color.yellow
+					foreground: Colors.yellow
 				}
 			}, {
 				scope: 'string.regexp',
 				settings: {
-					foreground: Color.red
+					foreground: Colors.red
 				}
 			}, {
 				name: 'String interpolation',
@@ -397,13 +402,13 @@ export default class Chimera extends Schema {
 					'punctuation.section.embedded'
 				],
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				name: 'Reset JavaScript string interpolation expression',
 				scope: 'meta.template.expression',
 				settings: {
-					foreground: Color.foreground
+					foreground: Colors.foreground
 				}
 			}, {
 				scope: [
@@ -415,22 +420,22 @@ export default class Chimera extends Schema {
 					'source.coffee.embedded'
 				],
 				settings: {
-					foreground: Color.cyan
+					foreground: Colors.cyan
 				}
 			}, {
 				scope: 'keyword',
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: 'keyword.control',
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: 'keyword.operator',
 				settings: {
-					foreground: Color.foreground
+					foreground: Colors.foreground
 				}
 			}, {
 				scope: [
@@ -446,7 +451,7 @@ export default class Chimera extends Schema {
 					'keyword.operator.wordlike'
 				],
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: [
@@ -454,7 +459,7 @@ export default class Chimera extends Schema {
 					'keyword.control.unit'
 				],
 				settings: {
-					foreground: Color.greenYellowMix
+					foreground: Colors.greenYellowMix
 				}
 			}, {
 				scope: [
@@ -462,23 +467,23 @@ export default class Chimera extends Schema {
 					'punctuation.section.embedded.end.php'
 				],
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				name: 'php instanceof',
 				scope: 'keyword.operator.type.php',
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}, {
 				scope: 'support.function.git-rebase',
 				settings: {
-					foreground: Color.cyan
+					foreground: Colors.cyan
 				}
 			}, {
 				scope: 'constant.sha.git-rebase',
 				settings: {
-					foreground: Color.greenYellowMix
+					foreground: Colors.greenYellowMix
 				}
 			}, {
 				name: 'coloring of the Java import and package identifiers',
@@ -488,13 +493,13 @@ export default class Chimera extends Schema {
 					'storage.modifier.package.java'
 				],
 				settings: {
-					foreground: Color.foreground
+					foreground: Colors.foreground
 				}
 			}, {
 				name: 'this.self',
 				scope: 'variable.language',
 				settings: {
-					foreground: Color.pink
+					foreground: Colors.pink
 				}
 			}
 

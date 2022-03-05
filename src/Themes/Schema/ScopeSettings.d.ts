@@ -1,4 +1,9 @@
+// ================================================================= //
+// Copyright (c) roydukkey. All rights reserved.                     //
+// ================================================================= //
+
 import type color from '../../util/color';
+
 
 interface ScopeSettings {
 
@@ -9,5 +14,6 @@ interface ScopeSettings {
 	readonly fontStyle?: '' | 'bold underline' | 'bold' | 'italic bold underline' | 'italic bold' | 'italic underline' | 'italic' | 'underline';
 
 }
+
 
 export default ScopeSettings;
