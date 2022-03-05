@@ -1,9 +1,9 @@
 # Changelog
 
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
-<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.8.0...master) -->
+<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.10.0...master) -->
 
-## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.8.0...master)
+## [0.10.0](https://github.com/roydukkey/chimera-theme/compare/v0.8.0...0.10.0)
 
 * Clean up and fix web release
 * Increase `editorCodeLens.foreground` and `gitlens.trailingLineForegroundColor` ([#28](https://github.com/roydukkey/chimera-theme/issues/28))
