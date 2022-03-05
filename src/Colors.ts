@@ -75,8 +75,8 @@ class Color {
 	readonly 'editorOverviewRuler.wordHighlightStrongForeground' = this['editor.wordHighlightStrongBackground'];
 
 	// CodeLens
-	readonly 'editorCodeLens.foreground' = this.comment.alpha(0.333);
-	readonly 'gitlens.trailingLineForegroundColor' = this['editorCodeLens.foreground'];
+	readonly 'editorCodeLens.foreground' = this.comment;
+	readonly 'gitlens.trailingLineForegroundColor' = this.comment.alpha(0.45);
 
 	// Specific
 	readonly 'activityBar.inactiveForeground' = this.foreground.mix(this.purple).alpha(0.333);
