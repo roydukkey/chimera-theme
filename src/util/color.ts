@@ -1,3 +1,7 @@
+// ================================================================= //
+// Copyright (c) roydukkey. All rights reserved.                     //
+// ================================================================= //
+
 import { to } from 'color-string';
 import * as color from 'color';
 

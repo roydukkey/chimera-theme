@@ -1,6 +1,11 @@
-import Colors from 'Colors';
+// ================================================================= //
+// Copyright (c) roydukkey. All rights reserved.                     //
+// ================================================================= //
+
+import Colors from '../Colors';
 import Schema from './Schema';
 import type { WorkspaceConfiguration } from '../Configuration';
+
 
 export default class ChimeraPlus extends Schema {
 

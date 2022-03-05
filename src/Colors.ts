@@ -1,3 +1,7 @@
+// ================================================================= //
+// Copyright (c) roydukkey. All rights reserved.                     //
+// ================================================================= //
+
 import base from './util/color';
 
 
@@ -114,4 +118,4 @@ class Color {
 }
 
 
-export default Color as unknown as { [key in keyof Color]: string };
+export default new Color();

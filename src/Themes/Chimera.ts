@@ -1,5 +1,10 @@
-import Colors from 'Colors';
+// ================================================================= //
+// Copyright (c) roydukkey. All rights reserved.                     //
+// ================================================================= //
+
+import Colors from '../Colors';
 import Schema from './Schema';
+
 
 export default class Chimera extends Schema {
 

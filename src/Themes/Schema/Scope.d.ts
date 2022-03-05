@@ -1,4 +1,9 @@
+// ================================================================= //
+// Copyright (c) roydukkey. All rights reserved.                     //
+// ================================================================= //
+
 import type ScopeSettings from './ScopeSettings';
+
 
 interface Scope {
 
@@ -12,5 +17,6 @@ interface Scope {
 	readonly settings: ScopeSettings;
 
 }
+
 
 export default Scope;

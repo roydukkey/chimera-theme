@@ -1,8 +1,11 @@
+// ================================================================= //
+// Copyright (c) roydukkey. All rights reserved.                     //
+// ================================================================= //
+
 import type { ExtensionContext } from 'vscode';
 import type { WorkspaceConfiguration } from './Configuration';
 import generateThemes from './generateThemes';
-import { ExtensionMode, commands, window, workspace } from 'vscode';
-import * as vscode from 'vscode';
+import { ExtensionMode, UIKind, Uri, commands, env, window, workspace } from 'vscode';
 
 
 const lastCompiledVersionKey = 'CompiledVersionKey';
@@ -15,23 +18,32 @@ const lastCompiledVersionKey = 'CompiledVersionKey';
  */
 export function activate (context: ExtensionContext): void {
 	const { displayName, name, version } = context.extension.packageJSON;
+	const isWeb = env.uiKind === UIKind.Web;
 
-	if (context.extensionMode === ExtensionMode.Development) {
-		context.globalState.update(lastCompiledVersionKey, undefined);
-	}
+	if (!isWeb) {
+		if (context.extensionMode === ExtensionMode.Development) {
+			context.globalState.update(lastCompiledVersionKey, undefined);
+		}
 
-	// Theme should be rebuilt after installation and upgrade.
-	if (context.globalState.get<string>(lastCompiledVersionKey) !== version) {
-		buildTheme(name, context);
-		context.globalState.update(lastCompiledVersionKey, version);
-		requestReload(`Please reload Visual Studio Code to complete the installation of ${displayName}.`);
+		// Theme should be rebuilt after installation and upgrade.
+		if (context.globalState.get<string>(lastCompiledVersionKey) !== version) {
+			buildTheme(name, context);
+			context.globalState.update(lastCompiledVersionKey, version);
+			requestReload(`Please reload Visual Studio Code to complete the installation of ${displayName}.`);
+		}
 	}
 
 	// When theme configuration changes, rebuild theme.
 	const disposable = workspace.onDidChangeConfiguration((event) => {
 		if (event.affectsConfiguration(`${name}.plus.contrastConstants`)) {
-			buildTheme(name, context);
-			requestReload(`A setting to ${displayName} has changed that requires a reload to take effect.`);
+			if (isWeb) {
+				window.showInformationMessage(`This ${displayName} setting has no affect in a web environment.`);
+			}
+
+			else {
+				buildTheme(name, context);
+				requestReload(`A setting to ${displayName} has changed that requires a reload to take effect.`);
+			}
 		}
 	});
 
@@ -44,10 +56,10 @@ export function activate (context: ExtensionContext): void {
  */
 function buildTheme (name: string, context: ExtensionContext): void {
 	const config = workspace.getConfiguration(name) as unknown as WorkspaceConfiguration;
-	const basePath = vscode.Uri.joinPath(context.extensionUri, './dist');
+	const basePath = Uri.joinPath(context.extensionUri, './dist');
 
 	generateThemes(config).forEach(([fileName, content]) => {
-		const file = vscode.Uri.joinPath(basePath, fileName);
+		const file = Uri.joinPath(basePath, fileName);
 		const buffer = Uint8Array.from(content, (x) => x.charCodeAt(0));
 		workspace.fs.writeFile(file, buffer);
 	});

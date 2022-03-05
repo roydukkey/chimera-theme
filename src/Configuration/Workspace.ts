@@ -1,3 +1,7 @@
+// ================================================================= //
+// Copyright (c) roydukkey. All rights reserved.                     //
+// ================================================================= //
+
 /**
  * Represents the configuration of the workspace.
  */

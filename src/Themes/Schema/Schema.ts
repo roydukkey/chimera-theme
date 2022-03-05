@@ -1,5 +1,10 @@
+// ================================================================= //
+// Copyright (c) roydukkey. All rights reserved.                     //
+// ================================================================= //
+
 import type Scope from './Scope';
 import type color from '../../util/color';
+
 
 export default abstract class Schema {
 

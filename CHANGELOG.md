@@ -3,6 +3,10 @@
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
 <!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.8.0...master) -->
 
+## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.8.0...master)
+
+* Clean up and fix web release
+
 ## [0.8.0](https://github.com/roydukkey/chimera-theme/compare/v0.7.0...v0.8.0)
 
 * Rewrite extension to compile web release

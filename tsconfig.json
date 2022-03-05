@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"target": "es6",
+		"target": "es2020",
 		"lib": [
 			"es6",
 			"WebWorker"
@@ -15,7 +15,8 @@
 		"noImplicitAny": true,
 		"noImplicitThis": true,
 		"noImplicitReturns": true,
-		"noUnusedParameters": true
+		"noUnusedParameters": true,
+		"removeComments": true
 	},
 	"exclude": [
 		"node_modules",

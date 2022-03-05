@@ -1,10 +1,13 @@
+// ================================================================= //
+// Copyright (c) roydukkey. All rights reserved.                     //
+// ================================================================= //
+
 import Chimera from './Themes/Chimera';
 import ChimeraPlus from './Themes/ChimeraPlus';
 import type Schema from './Themes/Schema';
 import type { WorkspaceConfiguration } from './Configuration';
 
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const templates: Array<[string, new(config: WorkspaceConfiguration) => Schema]> = [
 	['chimera.json', Chimera],
 	['chimera-plus.json', ChimeraPlus]
@@ -20,6 +23,6 @@ const templates: Array<[string, new(config: WorkspaceConfiguration) => Schema]> 
 export default function generateThemes (config: WorkspaceConfiguration): Array<[string, string]> {
 	return templates.map(([fileName, document]) => [
 		fileName,
-		JSON.stringify(new document(config), null, '\t')
+		JSON.stringify(new document(config), null, 0)
 	]);
 }

@@ -1,5 +1,6 @@
 import type { Configuration } from 'webpack';
-import { ProvidePlugin } from 'webpack';
+import { BannerPlugin, ProvidePlugin } from 'webpack';
+import { author, displayName, name, repository, version } from './package.json';
 import * as path from 'path';
 
 
@@ -20,15 +21,7 @@ const webExtensionConfig: Configuration = {
 		extensions: ['.ts', '.js'], // support ts-files and js-files
 		alias: {
 			// provides alternate implementation for node module and source files
-			// eslint-disable-next-line @typescript-eslint/naming-convention
-			Colors: path.resolve(__dirname, './dist/colors.json')
-		},
-		fallback: {
-			// Webpack 5 no longer polyfills Node.js core modules automatically.
-			// see https://webpack.js.org/configuration/resolve/#resolvefallback
-			// for the list of Node.js core module polyfills.
-			// color: require.resolve('color'),
-			// 'color-string': require.resolve('color-string')
+			'../Colors': path.resolve(__dirname, './dist/colors.json')
 		}
 	},
 	module: {
@@ -41,6 +34,11 @@ const webExtensionConfig: Configuration = {
 		}]
 	},
 	plugins: [
+		new BannerPlugin([
+			`${displayName} v${version}`,
+			`(c) ${author.name}`,
+			`${repository.url.replace(/\.git$/, `/blob/v${version}/LICENSE`)}`
+		].join(' | ')),
 		new ProvidePlugin({
 			process: 'process/browser' // provide a shim for the global `process` variable
 		})
