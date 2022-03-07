@@ -10,6 +10,7 @@
 
 ## [0.8.0](https://github.com/roydukkey/chimera-theme/compare/v0.7.0...v0.8.0)
 
+* Requires at least VS Code 1.64.0 or greater
 * Rewrite extension to compile web release
 * Remove dependencies on `color` and `color-string` (now dev dependencies)
 * Improve development debugging and add web debugging
