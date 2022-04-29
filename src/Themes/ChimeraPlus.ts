@@ -43,7 +43,6 @@ export default class ChimeraPlus extends Schema {
 			}, {
 				name: 'Types declaration and references',
 				scope: [
-					'meta.return-type',
 					'support.class',
 					'support.type',
 					'entity.name.type',
