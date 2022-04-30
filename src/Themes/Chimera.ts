@@ -276,6 +276,11 @@ export default class Chimera extends Schema {
 					foreground: Colors.orange
 				}
 			}, {
+				scope: 'markup.strikethrough',
+				settings: {
+					fontStyle: 'strikethrough'
+				}
+			}, {
 				scope: 'markup.underline',
 				settings: {
 					fontStyle: 'underline',

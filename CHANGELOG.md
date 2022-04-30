@@ -5,6 +5,7 @@
 
 ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.10.0...master)
 
+* Add strike through for markdown following Dark ([@vscode/#43504](https://github.com/microsoft/vscode/issues/43504))
 * Remove `meta.return-type` following Dark+ ([@vscode/#142672](https://github.com/microsoft/vscode/issues/142672))
 
 ## [0.10.0](https://github.com/roydukkey/chimera-theme/compare/v0.8.0...0.10.0)
