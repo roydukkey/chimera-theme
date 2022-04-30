@@ -1,9 +1,9 @@
 # Changelog
 
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
-<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.10.0...master) -->
+<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...master) -->
 
-## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.10.0...master)
+## [0.12.0](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...master)
 
 * Add strike through for markdown following Dark ([@vscode/#43504](https://github.com/microsoft/vscode/issues/43504))
 * Remove `meta.return-type` following Dark+ ([@vscode/#142672](https://github.com/microsoft/vscode/issues/142672))

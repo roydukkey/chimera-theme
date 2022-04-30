@@ -24,8 +24,8 @@ export default ScopeSettings;
 /**
  * @see {@link https://stackoverflow.com/questions/59471947}
  */
-type UnionToOvlds<U> = UnionToIntersection<U extends unknown ? (f: U) => void : never>;
-type PopUnion<U> = UnionToOvlds<U> extends (a: infer A) => void ? A : never;
+type UnionToOverloads<U> = UnionToIntersection<U extends unknown ? (f: U) => void : never>;
+type PopUnion<U> = UnionToOverloads<U> extends (a: infer A) => void ? A : never;
 type UnionConcat<U extends string, Sep extends string> = PopUnion<U> extends infer SELF
 	? SELF extends string
 		? Exclude<U, SELF> extends never
