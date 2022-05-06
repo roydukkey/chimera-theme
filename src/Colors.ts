@@ -20,6 +20,8 @@ class Color {
 	readonly purple = base('#CAA9FA');
 	readonly red = base('#F09489');
 	readonly yellow = base('#F6FACA');
+	readonly black = this.background.darken(0.5);
+	readonly white = this.comment.lighten(0.5);
 
 	// Color Variants
 	readonly backgroundLight1 = this.background.lighten(0.225);
@@ -60,8 +62,13 @@ class Color {
 
 	// Bracket Pair
 	readonly vibrantCyan1 = this.cyan.darken(0.125).saturate(0.125);
+	readonly vibrantGreen1 = this.green.darken(0.125).saturate(0.125);
 	readonly vibrantPink1 = this.pink.darken(0.125).saturate(0.125);
+	readonly vibrantPurple1 = this.purple.darken(0.125).saturate(0.125);
 	readonly vibrantRed1 = this.red.darken(0.125).saturate(0.125);
+	readonly vibrantYellow1 = this.yellow.darken(0.125).saturate(0.125);
+	readonly vibrantWhite1 = this.white.darken(0.125).saturate(0.125);
+	readonly vibrantBlack1 = this.black.lighten(0.125).saturate(0.125);
 
 	readonly vibrantCyan2 = this.cyan.darken(0.25).saturate(0.5);
 	readonly vibrantYellow2 = this.yellow.darken(0.25).saturate(0.5);

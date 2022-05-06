@@ -7,6 +7,7 @@
 
 * Implement bracket pair colorization
 * Implement merge conflict colors
+* Implement integrated terminal colors
 * Add `button.secondaryBackground`, `editorBracketMatch.border`, and `editor.foldBackground`
 
 ## [0.12.0](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...master)
