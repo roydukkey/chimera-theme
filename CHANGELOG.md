@@ -6,7 +6,7 @@
 ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...master)
 
 * Implement bracket pair colorization
-* Add `editor.foldBackground`
+* Add `editor.foldBackground`, `editorBracketMatch.border`
 
 ## [0.12.0](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...master)
 

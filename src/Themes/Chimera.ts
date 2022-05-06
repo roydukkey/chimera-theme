@@ -54,6 +54,8 @@ export default class Chimera extends Schema {
 			'editorBracketHighlight.foreground3': Colors.vibrantPink1,
 			'editorBracketHighlight.unexpectedBracket.foreground': Colors.vibrantRed1,
 
+			'editorBracketMatch.border': Colors.foregroundDark1,
+
 			'editorCodeLens.foreground': Colors['editorCodeLens.foreground'],
 
 			'editorError.foreground': Colors.error,
