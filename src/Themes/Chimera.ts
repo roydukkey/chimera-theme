@@ -30,8 +30,8 @@ export default class Chimera extends Schema {
 			'debugToolBar.background': Colors.backgroundLight3,
 
 			'diffEditor.diagonalFill': Colors.backgroundLight3,
-			'diffEditor.insertedTextBackground': Colors['diffEditor.insertedTextBackground'],
-			'diffEditor.removedTextBackground': Colors['diffEditor.removedTextBackground'],
+			'diffEditor.insertedTextBackground': Colors.diffInserted,
+			'diffEditor.removedTextBackground': Colors.diffRemoved,
 
 			'dropdown.background': Colors.backgroundLight3,
 
@@ -138,6 +138,10 @@ export default class Chimera extends Schema {
 
 			'menu.background': Colors.backgroundLight1,
 			'menu.foreground': '#CCCCCC',
+
+			'merge.currentHeaderBackground': Colors.mergeCurrent,
+			'merge.incomingHeaderBackground': Colors.mergeIncoming,
+			'merge.commonHeaderBackground': Colors.mergeCommon,
 
 			'notebook.selectedCellBackground': Colors.backgroundLight3,
 

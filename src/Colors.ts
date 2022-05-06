@@ -66,6 +66,13 @@ class Color {
 	readonly vibrantCyan2 = this.cyan.darken(0.25).saturate(0.5);
 	readonly vibrantYellow2 = this.yellow.darken(0.25).saturate(0.5);
 
+	// Diff & Merge Conflicts
+	readonly diffInserted = this.green.darken(0.35).desaturate(0.65).alpha(0.266);
+	readonly diffRemoved = this.red.darken(0.35).desaturate(0.65).alpha(0.266);
+	readonly mergeCurrent = this.pink.darken(0.1).saturate(0.2).alpha(0.2);
+	readonly mergeCommon = this.cyan.darken(0.1).saturate(0.2).alpha(0.2);
+	readonly mergeIncoming = this.purple.darken(0.1).saturate(0.2).alpha(0.2);
+
 	// Selection and Highlight
 	readonly 'editor.selectionBackground' = this.selection.alpha(0.55);
 	readonly 'editor.findMatchBackground' = this['editor.selectionBackground'];
@@ -87,9 +94,6 @@ class Color {
 
 	// Specific
 	readonly 'activityBar.inactiveForeground' = this.foreground.mix(this.purple).alpha(0.333);
-
-	readonly 'diffEditor.insertedTextBackground' = this.green.darken(0.35).desaturate(0.65).alpha(0.266);
-	readonly 'diffEditor.removedTextBackground' = this.red.darken(0.35).desaturate(0.65).alpha(0.266);
 
 	readonly 'editorGroup.dropBackground' = this.backgroundLight4.alpha(0.6);
 	readonly 'editorGutter.addedBackground' = this.added.alpha(0.6);
