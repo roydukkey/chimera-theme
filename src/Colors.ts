@@ -64,6 +64,7 @@ class Color {
 	readonly 'editor.selectionBackground' = this.selection.alpha(0.55);
 	readonly 'editor.findMatchBackground' = this['editor.selectionBackground'];
 	readonly 'editor.findMatchHighlightBackground' = this.orangeDark1.alpha(0.5);
+	readonly 'editor.foldBackground' = this.comment.alpha(0.35);
 	readonly 'editor.hoverHighlightBackground' = this.pink.alpha(0.2);
 	readonly 'editor.lineHighlightBorder' = this.currentLine.alpha(0.4);
 	readonly 'editor.rangeHighlightBackground' = this.orangeDark1.alpha(0.1);

@@ -38,6 +38,7 @@ export default class Chimera extends Schema {
 			'editor.background': Colors.background,
 			'editor.findMatchBackground': Colors['editor.findMatchBackground'],
 			'editor.findMatchHighlightBackground': Colors['editor.findMatchHighlightBackground'],
+			'editor.foldBackground': Colors['editor.foldBackground'],
 			'editor.foreground': Colors.foreground,
 			'editor.hoverHighlightBackground': Colors['editor.hoverHighlightBackground'],
 			'editor.lineHighlightBorder': Colors['editor.lineHighlightBorder'],
