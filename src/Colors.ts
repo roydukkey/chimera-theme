@@ -81,19 +81,20 @@ class Color {
 	readonly mergeIncoming = this.purple.darken(0.1).saturate(0.2).alpha(0.2);
 
 	// Selection and Highlight
-	readonly 'editor.selectionBackground' = this.selection.alpha(0.55);
-	readonly 'editor.findMatchBackground' = this['editor.selectionBackground'];
-	readonly 'editor.findMatchHighlightBackground' = this.orangeDark1.alpha(0.5);
-	readonly 'editor.foldBackground' = this.comment.alpha(0.35);
-	readonly 'editor.hoverHighlightBackground' = this.pink.alpha(0.2);
-	readonly 'editor.lineHighlightBorder' = this.currentLine.alpha(0.4);
-	readonly 'editor.rangeHighlightBackground' = this.orangeDark1.alpha(0.1);
-	readonly 'editor.selectionHighlightBackground' = this.selection.alpha(0.3);
-	readonly 'editor.wordHighlightBackground' = this.purple.alpha(0.2);
-	readonly 'editor.wordHighlightStrongBackground' = this.purple.alpha(0.4);
+	readonly selectionBackground = this.selection.alpha(0.55);
+	readonly findMatchBackground = this.orangeDark1.alpha(0.5);
+	readonly findMatchBorder = this.orangeDark1.alpha(0.75);
+	readonly findMatchHighlightBackground = this.orangeDark1.alpha(0.25);
+	readonly findMatchHighlightBorder = this.orangeDark1.alpha(0.5);
 
-	readonly 'editorOverviewRuler.wordHighlightForeground' = this['editor.wordHighlightBackground'];
-	readonly 'editorOverviewRuler.wordHighlightStrongForeground' = this['editor.wordHighlightStrongBackground'];
+	readonly hoverHighlightBackground = this.pink.alpha(0.2);
+	readonly lineHighlightBorder = this.currentLine.alpha(0.4);
+	readonly rangeHighlightBackground = this.orangeDark1.alpha(0.1);
+	readonly selectionHighlightBackground = this.selection.alpha(0.3);
+	readonly wordHighlightBackground = this.purple.alpha(0.2);
+	readonly wordHighlightStrongBackground = this.purple.alpha(0.4);
+
+	readonly 'editor.foldBackground' = this.comment.alpha(0.35);
 
 	// CodeLens
 	readonly 'editorCodeLens.foreground' = this.comment;

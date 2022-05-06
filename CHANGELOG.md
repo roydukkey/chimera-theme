@@ -5,6 +5,7 @@
 
 ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...master)
 
+* Improves find match colors
 * Implement bracket pair colorization
 * Implement merge conflict colors
 * Implement integrated terminal colors
