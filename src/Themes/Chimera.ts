@@ -26,6 +26,7 @@ export default class Chimera extends Schema {
 			'badge.foreground': Colors.foreground,
 
 			'button.background': Colors.pinkDark3,
+			'button.secondaryBackground': Colors.backgroundLight4,
 
 			'debugToolBar.background': Colors.backgroundLight3,
 
