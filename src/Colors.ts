@@ -31,8 +31,6 @@ class Color {
 	readonly foregroundDark1 = this.foreground.darken(0.35);
 	readonly foregroundDark2 = this.foreground.darken(0.5);
 
-	readonly cyanLight1 = this.cyan.darken(0.125).saturate(0.025);
-
 	readonly greenYellowMix = this.green.mix(this.yellow);
 
 	readonly orangeDark1 = this.orange.darken(0.50).desaturate(0.65);
@@ -59,6 +57,14 @@ class Color {
 	readonly warning = this.yellow;
 	readonly warningDark1 = this.yellow.darken(0.45).desaturate(0.75);
 	readonly warningDark2 = this.yellow.darken(0.70).desaturate(0.85);
+
+	// Bracket Pair
+	readonly vibrantCyan1 = this.cyan.darken(0.125).saturate(0.125);
+	readonly vibrantPink1 = this.pink.darken(0.125).saturate(0.125);
+	readonly vibrantRed1 = this.red.darken(0.125).saturate(0.125);
+
+	readonly vibrantCyan2 = this.cyan.darken(0.25).saturate(0.5);
+	readonly vibrantYellow2 = this.yellow.darken(0.25).saturate(0.5);
 
 	// Selection and Highlight
 	readonly 'editor.selectionBackground' = this.selection.alpha(0.55);

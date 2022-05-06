@@ -131,7 +131,7 @@ export default class ChimeraPlus extends Schema {
 						'variable.other.enummember'
 					],
 					settings: {
-						foreground: Colors.cyanLight1
+						foreground: Colors.vibrantCyan1
 					}
 				}
 
