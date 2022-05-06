@@ -3,7 +3,7 @@
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
 <!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...master) -->
 
-## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...master)
+## [0.14.0](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...v0.14.0)
 
 * Improves find match colors
 * Implement bracket pair colorization
@@ -11,12 +11,12 @@
 * Implement integrated terminal colors
 * Add `button.secondaryBackground`, `editorBracketMatch.border`, and `editor.foldBackground`
 
-## [0.12.0](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...master)
+## [0.12.0](https://github.com/roydukkey/chimera-theme/compare/v0.10.0...v0.12.0)
 
 * Add strike through for markdown following Dark ([@vscode/#43504](https://github.com/microsoft/vscode/issues/43504))
 * Remove `meta.return-type` following Dark+ ([@vscode/#142672](https://github.com/microsoft/vscode/issues/142672))
 
-## [0.10.0](https://github.com/roydukkey/chimera-theme/compare/v0.8.0...0.10.0)
+## [0.10.0](https://github.com/roydukkey/chimera-theme/compare/v0.8.0...v0.10.0)
 
 * Clean up and fix web release
 * Increase `editorCodeLens.foreground` and `gitlens.trailingLineForegroundColor` ([#28](https://github.com/roydukkey/chimera-theme/issues/28))
