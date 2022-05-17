@@ -1,17 +1,17 @@
 # Changelog
 
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
-<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...master) -->
+<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.1...master) -->
 
-## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.0...master)
+## [0.14.1](https://github.com/roydukkey/chimera-theme/compare/v0.14.0...v0.14.1)
 
-* Adjust black and white integrated terminal color
+* Fix black integrated terminal color
 
 ## [0.14.0](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...v0.14.0)
 
 * Improves find match colors
 * Implement bracket pair colorization
-* Implement merge conflict colors
+* Implement merge conflict colors`
 * Implement integrated terminal colors
 * Add `button.secondaryBackground`, `editorBracketMatch.border`, and `editor.foldBackground`
 
