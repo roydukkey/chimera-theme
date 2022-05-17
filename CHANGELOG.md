@@ -3,6 +3,10 @@
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
 <!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...master) -->
 
+## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.0...master)
+
+* Adjust black and white integrated terminal color
+
 ## [0.14.0](https://github.com/roydukkey/chimera-theme/compare/v0.12.0...v0.14.0)
 
 * Improves find match colors
@@ -31,7 +35,7 @@
 
 ## [0.7.0](https://github.com/roydukkey/chimera-theme/compare/v0.6.0...v0.7.0)
 
-* Begin ~~annoying~~ [Pre-Release version scheme](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#pre-release-extensions)
+* Begin ~~annoying~~ [Pre-Release version scheme](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#prerelease-extensions)
 * No more Pre-Release version will be logged after this version
 
 ## [0.6.0](https://github.com/roydukkey/chimera-theme/compare/v0.5.0...v0.6.0)

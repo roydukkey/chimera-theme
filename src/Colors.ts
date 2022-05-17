@@ -20,7 +20,7 @@ class Color {
 	readonly purple = base('#CAA9FA');
 	readonly red = base('#F09489');
 	readonly yellow = base('#F6FACA');
-	readonly black = this.background.darken(0.5);
+	readonly black = this.comment.darken(0.5);
 	readonly white = this.comment.lighten(0.5);
 
 	// Color Variants
