@@ -1,9 +1,9 @@
 # Changelog
 
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
-<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.1...master) -->
+<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.2...master) -->
 
-## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.1...master)
+## [0.14.2](https://github.com/roydukkey/chimera-theme/compare/v0.14.1...v0.14.2)
 
 * Add sponsor URL
 
