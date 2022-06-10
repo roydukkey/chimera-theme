@@ -3,6 +3,10 @@
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
 <!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.1...master) -->
 
+## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.1...master)
+
+* Add sponsor URL
+
 ## [0.14.1](https://github.com/roydukkey/chimera-theme/compare/v0.14.0...v0.14.1)
 
 * Fix black integrated terminal color
