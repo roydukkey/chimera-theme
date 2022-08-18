@@ -3,6 +3,10 @@
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
 <!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.2...master) -->
 
+## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.2...master)
+
+* Pick up new md grammar ([@vscode-markdown-tm-grammar/#43504](https://github.com/microsoft/vscode-markdown-tm-grammar/issues/4))
+
 ## [0.14.2](https://github.com/roydukkey/chimera-theme/compare/v0.14.1...v0.14.2)
 
 * Add sponsor URL

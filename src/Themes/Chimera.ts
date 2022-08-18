@@ -230,7 +230,8 @@ export default class Chimera extends Schema {
 			{
 				scope: [
 					'meta.embedded',
-					'source.groovy.embedded'
+					'source.groovy.embedded',
+					'string meta.image.inline.markdown'
 				],
 				settings: {
 					foreground: Colors.foreground
