@@ -185,6 +185,7 @@ export default class Chimera extends Schema {
 			'terminal.findMatchBorder': Colors.findMatchBorder,
 			'terminal.findMatchHighlightBackground': Colors.findMatchHighlightBackground,
 			'terminal.findMatchHighlightBorder': Colors.findMatchHighlightBorder,
+			'terminal.inactiveSelectionBackground': Colors.backgroundLight3,
 			'terminalOverviewRuler.findMatchForeground': Colors.findMatchBackground,
 
 			'terminal.ansiBlack': Colors.black,

@@ -6,6 +6,7 @@
 ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.2...master)
 
 * Pick up new md grammar ([@vscode-markdown-tm-grammar/#43504](https://github.com/microsoft/vscode-markdown-tm-grammar/issues/4))
+* Inherit editor inactive selection colors in terminal ([@vscode/#158899](https://github.com/microsoft/vscode/issues/158899))
 
 ## [0.14.2](https://github.com/roydukkey/chimera-theme/compare/v0.14.1...v0.14.2)
 
