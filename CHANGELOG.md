@@ -1,9 +1,9 @@
 # Changelog
 
 <!-- The order of list items should be: Critical/Fixes, New, Update, Remove, Underpinnings -->
-<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.2...master) -->
+<!-- ## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.16.0...master) -->
 
-## [UNRELEASED](https://github.com/roydukkey/chimera-theme/compare/v0.14.2...master)
+## [0.16.0](https://github.com/roydukkey/chimera-theme/compare/v0.14.2...v0.16.0)
 
 * Pick up new md grammar ([@vscode-markdown-tm-grammar/#43504](https://github.com/microsoft/vscode-markdown-tm-grammar/issues/4))
 * Inherit editor inactive selection colors in terminal ([@vscode/#158899](https://github.com/microsoft/vscode/issues/158899))
